@@ -1,0 +1,28 @@
+###### List ######
+
+bookkeeper.accounting-record.list.label.title = Título
+bookkeeper.accounting-record.list.label.body = Cuerpo
+bookkeeper.accounting-record.list.label.ticker = Ticker
+bookkeeper.accounting-record.list.button.return = Volver
+
+###### Form ######
+
+bookkeeper.accounting-record.form.label.title = Título
+bookkeeper.accounting-record.form.label.status = ¿Está para publicar?
+bookkeeper.accounting-record.form.label.creationMoment = Momento de Creación
+bookkeeper.accounting-record.form.label.body = Cuerpo
+
+bookkeeper.accounting-record.form.label.username = Contable
+bookkeeper.accounting-record.form.label.bookkeeper.firm = Firma de Contable
+
+bookkeeper.accounting-record.form.label.investment-round.ticker = Ticker
+bookkeeper.accounting-record.form.label.investment-round.title = Título de Ronda de Inversión
+bookkeeper.accounting-record.form.label.investment-round.description = Descripción de Ronda de Inversión
+
+###### Button ######
+
+bookkeeper.accounting-record.form.button.investment-round = Mostrar Ronda de Inversión
+bookkeeper.accounting-record.form.label.create = Crear Registro de Contabilidad
+bookkeeper.accounting-record.form.label.publish = Publicar Registro de Contabilidad
+bookkeeper.accounting-record.form.button.return = Volver
+

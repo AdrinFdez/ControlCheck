@@ -1,0 +1,10 @@
+authenticated.bookkeeper-request.form.label.firm = Firm
+authenticated.bookkeeper-request.form.label.responsibilityStatement = Responsibility Statement
+
+authenticated.bookkeeper-request.requested.error = Your request is being revised
+
+authenticated.bookkeeper-request.form.label.create = Create
+authenticated.bookkeeper-request.form.label.return = Return
+
+authenticated.bookkeeper-request.error.firm.spam = The firm is considered spam
+authenticated.bookkeeper-request.error.statement.spam = The statement is considered spam

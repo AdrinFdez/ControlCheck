@@ -1,0 +1,22 @@
+investor.investmentRound.list.label.title = Titulo
+investor.investmentRound.list.label.description = Descripcion
+
+investor.investmentRound.form.label.ticker = Ticker
+investor.investmentRound.form.label.creationMoment = Fecha de creacion
+investor.investmentRound.form.label.kind = Tipo
+investor.investmentRound.form.label.title = Titulo
+investor.investmentRound.form.label.description = Descripcion
+investor.investmentRound.form.label.money = Cantidad
+investor.investmentRound.form.label.link = Link
+investor.investmentRound.form.label.status = Status
+
+investor.investmentRound.message.activity = Ver el Programa de Trabajo de la Ronda de Inversión
+
+investor.investmentRound.error.moneyCurrency = La moneda debe  ser EUROS (€)
+investor.InvestmentRound.error.noNegMoney = La cantidad debe ser positiva
+investor.InvestmentRound.error.ticker = Este ticker ya está en uso
+investor.InvestmentRound.error.ticker1 = El ticker debe ser SSS-YY-NNNNNN donde SSS son las tres primeras letras de su sector (si este tiene 1 o 2 letras, debe rellenar con X, por ejemplo, XXA), YY son las dos ultimas cifras del año de creacion y NNNNNN un número entre 0 y 999999
+investor.InvestmentRound.error.total = La Ronda de Inversiones no puede ser publicada porque los presupuestos no suman la cantidad total de dinero en la ronda.
+
+investor.investmentRoundApplication.form.button.apply = Aplicar
+investor.investmentRound.form.button.return = Volver

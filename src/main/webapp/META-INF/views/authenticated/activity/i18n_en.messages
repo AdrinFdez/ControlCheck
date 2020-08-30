@@ -1,0 +1,18 @@
+authenticated.activity.form.label.title = Title 
+authenticated.activity.form.label.startDate = Start Date
+authenticated.activity.form.label.endDate = End Date
+authenticated.activity.form.label.budget = Budget
+
+authenticated.activity.list.investmentRound.title = Investment Round´s title
+authenticated.activity.list.label.title = Title 
+authenticated.activity.list.label.startDate = Start Date
+authenticated.activity.list.label.endDate = End Date
+authenticated.activity.list.label.budget = Budget
+
+authenticated.activity.error.total = The sum of the activity budgets cannot exceed the total budget of the investment round
+
+authenticated.activity.error.title.spam = This message has been classified as spam
+
+authenticated.activity.form.button.create = Create
+authenticated.activity.form.button.update = Update
+authenticated.activity.form.button.return = Return

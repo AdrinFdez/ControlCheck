@@ -1,0 +1,16 @@
+administrator.creditCard.form.label.cardNumber = Card Number
+administrator.creditCard.form.label.holder = Holder
+administrator.creditCard.form.label.cvv = CVV
+administrator.creditCard.form.label.brand = Brand
+administrator.creditCard.form.label.expirationMonth = Expiration Month
+administrator.creditCard.form.label.expirationYear = Expiration Year
+
+administrator.creditCard.list.label.cardNumber = Card Number
+administrator.creditCard.list.label.brand = Brand
+
+administrator.creditCard.form.button.create = Create
+administrator.creditCard.form.button.update = Update
+administrator.creditCard.form.button.return = Return
+
+administrator.creditCard.error.cvv = CVV must have 3 digits
+administrator.creditCard.error.expiration = The expiration date is in the past

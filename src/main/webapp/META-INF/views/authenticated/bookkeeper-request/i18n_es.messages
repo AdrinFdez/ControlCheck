@@ -1,0 +1,10 @@
+authenticated.bookkeeper-request.form.label.firm = Firma
+authenticated.bookkeeper-request.form.label.statement = Declaración de responsabilidad
+
+authenticated.bookkeeper-request.requested.error = Tu solicitud está siendo procesada
+
+authenticated.bookkeeper-request.form.label.create = Registrar
+authenticated.bookkeeper-request.form.label.return = Volver
+
+authenticated.bookkeeper-request.error.firm.spam = La firma es considerada spam
+authenticated.bookkeeper-request.error.statement.spam = La declaración de responsabilidad es considerada spam

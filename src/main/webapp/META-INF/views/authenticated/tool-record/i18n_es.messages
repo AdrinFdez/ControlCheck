@@ -1,0 +1,19 @@
+authenticated.tool-record.list.label.title = Título
+authenticated.tool-record.list.label.sector = Sector
+authenticated.tool-record.list.label.inventorName = Nombre del Inventor
+authenticated.tool-record.list.label.description = Descripción
+authenticated.tool-record.list.label.website = Web
+authenticated.tool-record.list.label.email = Correo electrónico
+authenticated.tool-record.list.label.openSource = ¿Es de fuente abierta?
+authenticated.tool-record.list.label.rating = Valoración
+
+authenticated.tool-record.form.label.title = Título
+authenticated.tool-record.form.label.sector = Sector
+authenticated.tool-record.form.label.inventorName = Nombre del Inventor
+authenticated.tool-record.form.label.description = Descripción
+authenticated.tool-record.form.label.website = Web
+authenticated.tool-record.form.label.email = Correo electrónico
+authenticated.tool-record.form.label.openSource = ¿Es de fuente abierta?
+authenticated.tool-record.form.label.rating = Valoración
+
+authenticated.tool-record.form.button.return = Volver

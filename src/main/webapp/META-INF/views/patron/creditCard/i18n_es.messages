@@ -1,0 +1,20 @@
+patron.creditCard.form.label.cardNumber = Número de Tarjeta
+patron.creditCard.form.label.holder = Propietario
+patron.creditCard.form.label.cvv = CVV
+patron.creditCard.form.label.brand = Marca
+patron.creditCard.form.label.expirationMonth = Mes de Expiración
+patron.creditCard.form.label.expirationYear = Año de Expiración
+
+patron.creditCard.list.label.cardNumber = Número de Tarjeta
+patron.creditCard.list.label.brand = Propietario
+
+patron.creditCard.list.button.create = Crear
+patron.creditCard.form.button.update = Actualizar
+patron.creditCard.form.button.return = Volver
+
+administrator.creditCard.error.cvv = El CVV tiene que tener 3 dígitos obligatoriamente 
+administrator.creditCard.error.expiration = La fecha de expiración está en el pasado
+
+patron.banner.nocreditcard.error = No tienes tarjeta de crédito
+
+patron.banner.alreadyhavecreditcard.error = Ya tienes una tarjeta de crédito

@@ -1,0 +1,8 @@
+administrator.bookkeeper-request.list.label.firm = Firma
+administrator.bookkeeper-request.list.label.responsibilityStatement = Declaración de responsabilidad
+
+administrator.bookkeeper-request.form.label.firm = Firma
+administrator.bookkeeper-request.form.label.responsibilityStatement = Declaración de responsabilidad
+administrator.bookkeeper-request.form.button.accept = Aceptar petición
+administrator.bookkeeper-request.form.button.reject = Rechazar petición
+administrator.bookkeeper-request.form.button.return = Volver 

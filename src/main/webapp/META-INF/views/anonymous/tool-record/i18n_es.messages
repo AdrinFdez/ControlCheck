@@ -1,0 +1,19 @@
+anonymous.tool-record.list.label.title = Título
+anonymous.tool-record.list.label.sector = Sector
+anonymous.tool-record.list.label.inventorName = Nombre del Inventor
+anonymous.tool-record.list.label.description = Descripción
+anonymous.tool-record.list.label.website = Web
+anonymous.tool-record.list.label.email = Correo electrónico
+anonymous.tool-record.list.label.openSource = ¿Es de fuente abierta?
+anonymous.tool-record.list.label.rating = Valoración
+
+anonymous.tool-record.form.label.title = Título
+anonymous.tool-record.form.label.sector = Sector
+anonymous.tool-record.form.label.inventorName = Nombre del Inventor
+anonymous.tool-record.form.label.description = Descripción
+anonymous.tool-record.form.label.website = Web
+anonymous.tool-record.form.label.email = Correo electrónico
+anonymous.tool-record.form.label.openSource = ¿Es de fuente abierta?
+anonymous.tool-record.form.label.rating = Valoración
+
+anonymous.tool-record.form.button.return = Volver

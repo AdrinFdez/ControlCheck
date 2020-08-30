@@ -1,0 +1,18 @@
+administrator.banner.list.label.slogan = Eslogan
+administrator.banner.list.label.imageurl = URL Imagen 
+
+administrator.banner.form.label.slogan = Eslogan
+administrator.banner.form.label.imageurl = URL Imagen
+administrator.banner.form.label.targeturl = URL Destino
+administrator.banner.form.select.creditCard = Tarjeta de Credito
+
+administrator.banner.nocreditcard.error = Necesitas una tarjeta de credito para crear un Banner Comercial
+
+administrator.banner.form.button.create = Crear
+administrator.banner.form.button.update = Actualizar
+administrator.banner.form.button.delete = Borrar
+administrator.banner.form.button.return = Volver
+
+administrator.banner.error.imageurl.spam = La url de la imagen es considerada spam
+administrator.banner.error.slogan.spam = El eslogan es considerado spam
+administrator.banner.error.targeturl.spam = La url destino es considerada spam

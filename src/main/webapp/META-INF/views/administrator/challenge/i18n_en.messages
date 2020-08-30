@@ -1,0 +1,43 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.challenge.list.label.title = Title
+administrator.challenge.list.label.description = Description
+administrator.challenge.list.label.deadlineDate = Deadline Date
+
+administrator.challenge.form.label.title = Title
+administrator.challenge.form.label.deadlineDate = Deadline Date
+administrator.challenge.form.label.description = Description
+
+administrator.challenge.form.label.expert = Expert
+administrator.challenge.form.label.goalExpert = Expert Goal
+administrator.challenge.form.label.rewardExpert = Expert Reward
+
+administrator.challenge.form.label.average = Average
+administrator.challenge.form.label.goalAverage = Average Goal
+administrator.challenge.form.label.rewardAverage = Average Reward
+
+administrator.challenge.form.label.rookie = Rookie
+administrator.challenge.form.label.goalRookie = Rookie Goal
+administrator.challenge.form.label.rewardRookie = Rookie Reward
+
+administrator.challenge.form.button.return = Return
+
+administrator.challenge.form.button.create = New Challenge
+administrator.challenge.form.button.update = Update
+administrator.challenge.form.button.delete = Delete
+
+
+
+administrator.challenge.error.expert-higher-than-average = Expert reward must be higher than average reward
+administrator.challenge.error.average-more-than-rookie = Average reward must be higher than rookie reward
+administrator.challenge.error.wrong-currency = Only euro currency supported
+administrator.challenge.error.past-deadline = The deadline must be in the future
+administrator.challenge.error.past-deadline-1month = Deadline date must last at last 1 month.

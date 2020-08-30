@@ -1,0 +1,25 @@
+investor.investmentRoundApplication.list.label.ticker = Ticker
+investor.investmentRoundApplication.list.label.offer = Oferta
+investor.investmentRoundApplication.list.label.statement = Estado
+
+investor.investmentRoundApplication.form.label.ticker = Ticker
+investor.investmentRoundApplication.form.label.creationMoment = Momento de Creación
+investor.investmentRoundApplication.form.label.statement = Estado
+investor.investmentRoundApplication.form.label.offer = Oferta
+investor.investmentRoundApplication.form.label.justification = Justificación
+investor.investmentRoundApplication.form.label.link= Link
+investor.investmentRoundApplication.form.label.pass = Constraseña
+
+investor.investmentRoundApplication.message.investmentRound = Ronda de Inversión
+
+investor.investmentRoundApplication.error.moneyCurrency = La moneda debe  ser EUROS (€)
+investor.investmentRoundApplication.error.noNegOffer = La cantidad debe ser positiva
+investor.investmentRoundApplication.error.noMayorOffer = La cantidad no debe ser mayor que el dinero de la ronda de inversión 
+investor.investmentRoundApplication.error.ticker = Este ticker ya está en uso
+investor.investmentRoundApplication.error.ticker1 = El ticker debe ser SSS-YY-NNNNNN donde SSS son las tres primeras letras de su sector (si este tiene 1 o 2 letras, debe rellenar con X, por ejemplo, XXA), YY son las dos ultimas cifras del año de creacion y NNNNNN un número entre 0 y 999999
+investor.investmentRoundApplication.error.total = La Ronda de Inversiones no puede ser publicada porque los presupuestos no suman la cantidad total de dinero en la ronda.
+
+investor.investmentRoundApplication.form.button.create = Crear
+investor.investmentRoundApplication.form.button.update = Actualizar
+investor.investmentRoundApplication.form.button.delete = Borrar
+investor.investmentRoundApplication.form.button.return = Volver

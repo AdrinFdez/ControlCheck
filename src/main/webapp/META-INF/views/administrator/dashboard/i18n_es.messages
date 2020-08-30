@@ -1,0 +1,63 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.list.label #################################################################
+administrator.dashboard.list.label.totalNotices = T.N.N
+administrator.dashboard.list.label.totalTechnologyRecords = T.N.TE.R
+administrator.dashboard.list.label.totalToolRecords = T.N.T.R
+
+administrator.dashboard.list.label.MinMoneyInquires = Datos sobre la cota inferior de los intervalos (Investigaciones)
+administrator.dashboard.list.label.minMoneyInquires1 = MIN
+administrator.dashboard.list.label.maxMoneyInquires1= MAX
+administrator.dashboard.list.label.avgMoneyInquires1 = AVG
+administrator.dashboard.list.label.stdMoneyInquires1 = STD
+
+administrator.dashboard.list.label.MaxMoneyInquires = Datos sobre la cota superior de los intervalos (Investigaciones)
+administrator.dashboard.list.label.minMoneyInquires2 = MIN
+administrator.dashboard.list.label.maxMoneyInquires2= MAX
+administrator.dashboard.list.label.avgMoneyInquires2 = AVG
+administrator.dashboard.list.label.stdMoneyInquires2 =STD
+
+administrator.dashboard.list.label.MinMoneyOvertures = Datos sobre la cota inferior de los intervalos (Aperturas)
+administrator.dashboard.list.label.minMoneyOvertures1 = MIN
+administrator.dashboard.list.label.maxMoneyOvertures1= MAX
+administrator.dashboard.list.label.avgMoneyOvertures1 = AVG
+administrator.dashboard.list.label.stdMoneyOvertures1 = STD
+
+administrator.dashboard.list.label.MaxMoneyOvertures = Datos sobre la cota superior de los intervalos (Aperturas)
+administrator.dashboard.list.label.minMoneyOvertures2 = MIN
+administrator.dashboard.list.label.maxMoneyOvertures2= MAX
+administrator.dashboard.list.label.avgMoneyOvertures2 = AVG
+administrator.dashboard.list.label.stdMoneyOvertures2 = STD
+
+administrator.dashboard.legend #################################################################
+administrator.dashboard.legend.TNN = *T.N.N = Número total de Noticias
+administrator.dashboard.legend.TNTER = *T.N.TE.R = Número total de Technology Records
+administrator.dashboard.legend.TNTR = *T.N.T.R = Número total de Tool Records
+
+administrator.dashboard.chart #################################################################
+administrator.dashboard.chart.technologyPerSource = Total tecnologías por fuente abierta
+administrator.dashboard.chart.technologyBySector = Total tecnologías por sector
+administrator.dashboard.chart.toolPerSource = Total herramientas por fuente abierta
+administrator.dashboard.chart.toolBySector = Total herrramientas por sector.
+
+administrator.dashboard.timeSeries #################################################################
+administrator.dashboard.timeSeries.Pending = Número de solicitudes pendientes por día durante los últimos 15 días
+administrator.dashboard.timeSeries.Accepted = Número de solicitudes aceptadas por día durante los últimos 15 días
+administrator.dashboard.timeSeries.Rejected = Número de solicitudes rechazadas por día durante los últimos 15 días
+
+#######################################################
+administrator.dashboard.list.label.IvestmentData = Datos de inversión
+administrator.dashboard.list.label.avgInvestmentRoundPerEntrepreneur = Ronda de inversión por emprendedor
+administrator.dashboard.list.label.avgInvestmentRoundApplicationPerEntrepreneur = Aplicación a ronda de inversión por emprendedor
+administrator.dashboard.list.label.avgInvestmentRoundApplicationPerInvestor = Aplicación a ronda de inversión por inversor
+
+administrator.dashboard.chart.ratioOfInvestmentRoundByKind = Ratio de ronda de inversión por tipos
+administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByStatus = Aplicación a ronda de inversión por estado

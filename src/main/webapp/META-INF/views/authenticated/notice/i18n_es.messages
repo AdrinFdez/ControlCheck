@@ -1,0 +1,12 @@
+authenticated.notice.list.label.headerPicture = Imagen de encabezado
+authenticated.notice.list.label.title = Título
+authenticated.notice.list.label.deadlineDate = Fecha de fin
+
+authenticated.notice.form.label.headerPicture = Imagen de encabezado
+authenticated.notice.form.label.title = Título
+authenticated.notice.form.label.creationDate = Fecha de creación
+authenticated.notice.form.label.deadlineDate = Fecha de fin
+authenticated.notice.form.label.body = Cuerpo
+authenticated.notice.form.label.optionalLink = Enlace Opcional
+
+authenticated.notice.form.button.return = Volver

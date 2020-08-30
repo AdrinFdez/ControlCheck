@@ -1,0 +1,8 @@
+autheticated.discussionforum.form.noMoreUsers = No hay más usuarios que puedan ser añadidos al hilo
+authenticated.discussionforum.form.usersToAdd = Seleccione el usuario a añadir
+autheticated.discussionforum.form.button.addUser = Añadir Usuario
+
+autheticated.discussionforum.form.noMoreUsersToRemove = No hay más usuarios que puedan ser borrados del hilo
+authenticated.discussionforum.form.usersToRemove = Seleccione el usuario a eliminar
+autheticated.discussionforum.form.button.deleteUser = Eliminar usuario
+autheticated.discussionforum.form.button.return = Volver

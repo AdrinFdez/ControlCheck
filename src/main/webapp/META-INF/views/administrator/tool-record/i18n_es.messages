@@ -1,0 +1,33 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.tool-record.list.label.title = Título
+authenticated.tool-record.list.label.sector = Sector
+authenticated.tool-record.list.label.inventorName = Nombre del Inventor
+authenticated.tool-record.list.label.description = Descripción
+authenticated.tool-record.list.label.website = Web
+authenticated.tool-record.list.label.email = Correo electrónico
+authenticated.tool-record.list.label.openSource = ¿Es de fuente abierta?
+authenticated.tool-record.list.label.rating = Valoración
+
+authenticated.tool-record.form.label.title = Título
+authenticated.tool-record.form.label.sector = Sector
+authenticated.tool-record.form.label.inventorName = Nombre del Inventor
+authenticated.tool-record.form.label.description = Descripción
+authenticated.tool-record.form.label.website = Web
+authenticated.tool-record.form.label.email = Correo electrónico
+authenticated.tool-record.form.label.openSource = ¿Es de fuente abierta?
+authenticated.tool-record.form.label.rating = Valoración
+
+administrator.tool-record.form.button.update = Actualizar
+administrator.tool-record.form.button.delete = Borrar
+administrator.tool-record.form.button.create = Crear
+
+authenticated.tool-record.form.button.return = Volver

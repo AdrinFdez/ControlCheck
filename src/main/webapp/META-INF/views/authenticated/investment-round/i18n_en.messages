@@ -1,0 +1,18 @@
+
+authenticated.investmentRound.list.label.title = Title
+authenticated.investmentRound.list.label.description = Description 
+
+authenticated.investmentRound.form.label.ticker = Ticker
+authenticated.investmentRound.form.label.creationMoment = Creation Date
+authenticated.investmentRound.form.label.kind = Kind
+authenticated.investmentRound.form.label.title = Title
+authenticated.investmentRound.form.label.description = Description
+authenticated.investmentRound.form.label.money = Money
+authenticated.investmentRound.form.label.link = Link
+authenticated.investmentRound.form.button.return = Return
+
+authenticated.investmentRound.message.activity = See the Work Programme for this Investment Round
+authenticated.investmentRound.list.message.discussionforum = Discussion Forums
+authenticated.investmentRound.create.message.discussionforum = Create a Forum
+
+authenticated.investment-round.message.accounting-record = Accounting Records

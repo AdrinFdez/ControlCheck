@@ -1,0 +1,19 @@
+authenticated.technologyrecord.list.label.title = Título
+authenticated.technologyrecord.list.label.sector = Sector
+authenticated.techonologyrecord.list.label.inventorName = Nombre del Inversor
+authenticated.technologyrecord.list.label.description = Descripción
+authenticated.technologyrecord.list.label.website = Web
+authenticated.technologyrecord.list.label.email = Correo electrónico
+authenticated.technologyrecord.list.label.openSource = ¿Es de fuente abierta?
+authenticated.technologyrecord.list.label.rating = Valoración
+
+authenticated.technologyrecord.form.label.title = Título
+authenticated.technologyrecord.form.label.sector = Sector
+authenticated.technologyrecord.form.label.inventorName = Nombre del Inversor
+authenticated.technologyrecord.form.label.description = Descripción
+authenticated.technologyrecord.form.label.website = Web
+authenticated.technologyrecord.form.label.email = Correo electrónico
+authenticated.technologyrecord.form.label.openSource = ¿Es de fuente abierta?
+authenticated.technologyrecord.form.label.rating = Valoración
+
+authenticated.technologyrecord.form.button.return = Volver

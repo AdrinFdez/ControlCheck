@@ -1,0 +1,11 @@
+anonymous.cruzbulletin.form.label.name = Nombre:
+anonymous.cruzbulletin.form.label.gender = Género:
+anonymous.cruzbulletin.form.label.email = Email:
+anonymous.cruzbulletin.form.label.phoneNumber = Número de Teléfono:
+anonymous.cruzbulletin.form.button.create = Crear
+anonymous.cruzbulletin.form.button.return = Volver
+
+anonymous.cruzbulletin.list.label.name = Nombre
+anonymous.cruzbulletin.list.label.gender = Género
+anonymous.cruzbulletin.list.label.email = Email
+anonymous.cruzbulletin.list.label.phoneNumber = Número de Teléfono

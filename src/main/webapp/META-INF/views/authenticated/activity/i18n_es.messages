@@ -1,0 +1,19 @@
+authenticated.activity.form.label.title = Titulo
+authenticated.activity.form.label.startDate = Fecha de inicio
+authenticated.activity.form.label.endDate = Fecha de fin
+authenticated.activity.form.label.budget = Presupuesto
+
+authenticated.activity.list.investmentRound.title = Titulo de la Ronda de Inversión 
+authenticated.activity.list.label.title = Titulo
+authenticated.activity.list.label.startDate = Fecha de inicio
+authenticated.activity.list.label.endDate = Fecha de fin
+authenticated.activity.list.label.budget = Presupuesto
+
+authenticated.activity.error.total = La suma de los presupuestos de las actividades no puede superar el presupuesto total de la ronda de inversión
+
+authenticated.activity.error.title.spam = Este mensaje ha sido catalogado como spam
+
+authenticated.activity.form.button.create = Crear
+authenticated.activity.form.button.update = Editar
+authenticated.activity.form.button.return = Volver
+

@@ -1,0 +1,25 @@
+investor.investmentRoundApplication.list.label.ticker = Ticker
+investor.investmentRoundApplication.list.label.offer = Offer
+investor.investmentRoundApplication.list.label.statement = Statement
+
+investor.investmentRoundApplication.form.label.ticker = Ticker
+investor.investmentRoundApplication.form.label.creationMoment = Creation Moment
+investor.investmentRoundApplication.form.label.statement = Statement
+investor.investmentRoundApplication.form.label.offer = Offer
+investor.investmentRoundApplication.form.label.justification = Justification
+investor.investmentRoundApplication.form.label.link= Link
+investor.investmentRoundApplication.form.label.pass = Password
+
+investor.investmentRoundApplication.message.investmentRound = Investment Round
+
+investor.investmentRoundApplication.error.moneyCurrency = The currency must be EUROS (€)
+investor.investmentRoundApplication.error.noNegOffer = The amount must be positive
+investor.investmentRoundApplication.error.noMayorOffer = The amount must not be higher than investment round money 
+investor.investmentRoundApplication.error.ticker = Ticker is taken
+investor.investmentRoundApplication.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
+investor.investmentRoundApplication.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
+
+investor.investmentRoundApplication.form.button.create = Create
+investor.investmentRoundApplication.form.button.update = Update
+investor.investmentRoundApplication.form.button.delete = Delete
+investor.investmentRoundApplication.form.button.return = Return

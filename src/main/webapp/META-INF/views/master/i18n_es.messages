@@ -1,0 +1,303 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.banner.welcome #######################################################
+
+master.banner.background = #FFE97F 
+
+# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	Bienvenidos a Acme-Incubator, donde comienzan las ideas.
+
+# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+#------------------------------------------------------------------------------
+#ANONYMOUS
+master.menu.anonymous = Características Anónimo
+
+# master.menu.anonymous.links #######################################################
+master.menu.anonymous.links = Enlaces de creadores
+master.menu.anonymous.fernandez-link = Enlace de Fernandez
+master.menu.anonymous.rueda-link = Enlace de Rueda
+master.menu.anonymous.cadenas-link = Enlace de Cadenas
+master.menu.anonymous.pinero-link = Enlace de Pinero
+master.menu.anonymous.cruz-link = Enlace de Cruz
+
+#Bulletins
+master.menu.anonymous.bulletins = Boletines
+# master.menu.anonymous.ruedabulletin ###############################################
+
+master.menu.anonymous.list.ruedabulletin= Lista de Boletines Rueda
+master.menu.anonymous.create.ruedabulletin= Nuevo Boletín Rueda
+master.menu.anonymous.ruedabulletin= Boletín de Rueda
+
+# master.menu.anonymous.fernandezbulletin ###############################################
+
+master.menu.anonymous.list.fernandezbulletin= Lista de Boletines Fernandez
+master.menu.anonymous.create.fernandezbulletin= Nuevo Boletín Fernandez
+master.menu.anonymous.fernandezbulletin= Boletín de Fernandez 
+
+# master.menu.anonymous.cadenasbulletin ###############################################
+
+master.menu.anonymous.list.cadenasbulletin= Lista de Boletines Cadenas
+master.menu.anonymous.create.cadenasbulletin= Nuevo Boletín Cadenas
+master.menu.anonymous.cadenasbulletin= Boletín de Cadenas
+
+# master.menu.anonymous.cruzbulletin ###############################################
+
+master.menu.anonymous.list.cruzbulletin= Lista de Boletines Cruz
+master.menu.anonymous.create.cruzbulletin= Nuevo Boletín Cruz
+master.menu.anonymous.cruzbulletin= Boletín de Cruz 
+
+# master.menu.anonymous.pinerobulletin ###############################################
+
+master.menu.anonymous.list.pinerobulletin= Lista de Boletines Pinero
+master.menu.anonymous.create.pinerobulletin= Nuevo Boletín Pinero
+master.menu.anonymous.pinerobulletin= Boletín de Pinero 
+
+#NOTICES
+# master.menu.authenticated.notices ################################
+
+master.menu.anonymous.notice = Avisos
+master.menu.anonymous.list.notice = Lista de Avisos
+master.menu.administrator.create.notice = Crear Aviso
+
+#TECHNOLOGY RECORDS
+
+# master.menu.anonymous.technologyrecords #####################################
+
+master.menu.anonymous.technologyrecord = Recibos de Tecnología
+master.menu.anonymous.list.technologyrecord = Lista de Recibos de Tecnología
+master.menu.anonymous.list.technologyrecord.bysector = Lista por Sector
+master.menu.anonymous.list.technologyrecord.byrating = Lista por Valoración
+
+#TOOL RECORDS
+# master.menu.anonymous.toolrecords ##########################################################
+
+master.menu.anonymous.toolrecord = Recibos de Herramientas
+master.menu.anonymous.list.toolrecord = Lista de Recibos de Herramientas
+master.menu.anonymous.list.toolrecord.bysector = Lista por Sector
+master.menu.anonymous.list.toolrecord.byrating = Lista por Valoración
+
+#-----------------------------------------------------------------------------
+#AUTHENTICATED
+master.menu.authenticated = Características de Identificado
+
+#NOTICES
+# master.menu.authenticated.notices ##########################################################
+
+master.menu.authenticated.notice = Avisos
+master.menu.authenticated.list.notice = Lista de Avisos
+
+#INQUIRIES
+
+# master.menu.authenticated.inquiry ##########################################################
+
+master.menu.authenticated.inquiry = Investigaciones
+master.menu.authenticated.inquiry.list = Lista de Investigaciones
+
+#OVERTURES
+# master.menu.authenticated.overture ##########################################################
+
+master.menu.authenticated.overture = Propuestas
+master.menu.authenticated.overture.list = Lista de Propuestas
+master.menu.authenticated.overture.create = Crear Propuesta
+
+#TECHONOLOGY RECORDS
+# master.menu.authenticated.technologyrecords #################################################
+
+master.menu.authenticated.technologyrecord = Recibos de Tecnología
+master.menu.authenticated.list.technologyrecord = Lista de Recibos de Tecnología
+master.menu.authenticated.list.technologyrecord.bysector = Lista por Sector
+master.menu.authenticated.list.technologyrecord.byrating = Lista por Valoración
+
+#TOOL RECORDS
+# master.menu.authenticated.toolrecords #######################################################
+
+master.menu.authenticated.toolrecord = Recibos de Herramientas
+master.menu.authenticated.list.toolrecord = Lista de Recibos de Herramientas
+master.menu.authenticated.list.toolrecord.bysector = Lista por Sector
+master.menu.authenticated.list.toolrecord.byrating = Lista por Valoración
+
+#CHALLENGE
+# master.menu.authenticated.challenge ########################################################
+
+master.menu.authenticated.challenge = Retos
+master.menu.authenticated.list.challenge = Lista de Retos
+
+#INVESTMENT ROUNDS
+# master.menu.authenticated.investmentRound ##################################################
+master.menu.authenticated.investmentRound = Rondas de inversión
+master.menu.authenticated.investmentRound.list = Lista de Rondas de inversión
+
+#DISCUSSION FORUMS
+# master.menu.authenticated.discussionforum ##################################################
+master.menu.authenticated.discussionforum.listmine = Mi lista de Foros de Discusión
+
+
+#-----------------------------------------------------------------------------
+#Entrepreneur
+master.menu.entrepreneur = Menu Empresario
+master.menu.entrepreneur.investmentRound.list = Mi Lista de Rondas de inversión
+master.menu.entrepreneur.investmentRound.create = Crear Ronda de inversion
+master.menu.entrepreneur.investmentRound.listTicker = Mi Lista de Aplicaciones a Rondas de Inversión por Ticker
+master.menu.entrepreneur.investmentRound.listCreationMoment = Mi Lista de Aplicaciones a Rondas de Inversión por Fecha de Creación
+
+#-----------------------------------------------------------------------------
+#INVESTOR
+master.menu.investor = Menu Inversor
+master.menu.investor.investmentRound.list = Lista de Rondas de Inversión
+master.menu.investor.investmentRoundApplication.list = Mi lista de Aplicaciones a Rondas de Inversión
+
+#-----------------------------------------------------------------------------
+#BOOKKEEPER
+master.menu.bookkeeper = Menu Contable
+master.menu.bookkeeper.listAccountingInvestment = Mi lista de Rondas de Inversión Contabilizadas
+master.menu.bookkeeper.listNonAccountingInvestment = Lista de Rondas de Inversión
+
+#-----------------------------------------------------------------------------
+#ADMINISTRATOR
+master.menu.administrator = Administrador
+# master.menu.administrator ###################################################
+
+master.menu.administrator.feature = Características de Administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.dashboard= Panel de control
+master.menu.administrator.shutdown = Apagar el sistema
+
+# master.menu.administrator.display ###########################################
+
+master.menu.administrator.adminDisplay = Display de Administrador
+master.menu.administrator.customParams = Parámetros de Personalización
+master.menu.administrator.dashboard = Dashboard
+
+#NOTICES
+# master.menu.administrator.notices ##########################################################
+
+master.menu.administrator.notice = Avisos
+master.menu.administrator.list.notice = Lista de Avisos
+master.menu.administrator.create.notice = Crear Aviso
+
+#TECHONOLOGY RECORDS
+# master.menu.administrator.technologyrecords ################################
+
+master.menu.administrator.technologyrecord = Recibos de Tecnología
+master.menu.administrator.list.technologyrecord = Lista de Recibos de Tecnología
+master.menu.administrator.create.technologyrecord = Crear Recibo de Tecnología
+
+#TOOL RECORDS
+# master.menu.administrator.toolrecords ################################
+
+master.menu.administrator.toolrecord = Recibos de Herramienta
+master.menu.administrator.list.toolrecord = Lista de Recibos de Herramienta
+master.menu.administrator.create.toolrecord = Crear Recibo de Herramienta
+
+#INQUIRY
+# master.menu.administrator.inquiries #####################################
+
+master.menu.administrator.inquiry = Investigación
+master.menu.administrator.inquiry.list = Lista de Investigaciones
+master.menu.administrator.inquiry.create = Crear Investigación
+
+#OVERTURE
+# master.menu.administrator.overtures #####################################
+master.menu.administrator.overture = Propuesta
+master.menu.administrator.overture.list = Lista de Propuestas
+master.menu.administrator.overture.create = Crear Propuesta
+
+
+#CHALLENGE
+# master.menu.administrator.challenges #####################################
+master.menu.administrator.challenge = Reto
+master.menu.administrator.challenge.list = Lista de Retos
+master.menu.administrator.challenge.create = Crear Reto
+
+
+#CREDITCARD
+# master.menu.administrator.creditcards #####################################
+
+master.menu.administrator.creditCard = Tarjeta de Crédito
+master.menu.administrator.creditCard.list = Lista de Tarjetas
+master.menu.administrator.creditCard.create = Crear Tarjeta
+
+#BANNER
+# master.menu.administrator.banners #####################################
+master.menu.administrator.banner = Pancarta
+master.menu.administrator.banner.list = Lista de Pancartas
+master.menu.administrator.banner.create = Crear Pancarta
+
+#PATRON
+master.menu.patron = Menu Patrocinador
+master.menu.patron.banner.list = Lista de Pancartas
+master.menu.patron.banner.create = Crear Pancarta
+master.menu.patron.creditCard.list = Mi tarjeta de crédito
+master.menu.patron.creditCard.create = Añadir tarjeta de crédito
+
+#AUDITOR LIST REQUEST
+master.menu.administrator.bookkeeperRequest.list = Lista de Peticiones de Contable
+
+
+#-----------------------------------------------------------------------------
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.investor = Datos de inversor
+master.menu.user-account.become-investor = Hazte inversor
+master.menu.user-account.entrepreneur = Datos de empresario
+master.menu.user-account.become-entrepreneur = Hazte empresario
+master.menu.user-account.bookkeeper = Datos de contable
+master.menu.user-account.become-bookkeeper = Hazte contable
+master.menu.user-account.patron = Datos de patrocinador
+master.menu.user-account.become-patron = Hazte patrocinador
+
+# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguages
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.company ##############################################################
+
+master.company.title = La compañía
+master.company.text = \
+	Acme Incubator, Inc. es una compañía fictícia que proporciona un proyecto \
+	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
+	en Ingeniería del Software de la Universidad de Sevilla.
+master.company.name = Acme Incubator, Inc.
+master.company.address = Calle, número, Ciudad, Estado, País
+master.company.phone = +000 123 456
+master.company.email = contact@acme.com
+
+# master.license ##############################################################
+
+master.license.title = Licencia
+master.license.text = \
+	Puede usar este sistema de forma completamente gratuita respetando las leyes \
+	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
+	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
+	su sesión de trabajo, "remember" para mantener su información de autentificación \
+	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
+	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
+	local de su navegador para saber dónde tienen que ir algunos botones.
+	

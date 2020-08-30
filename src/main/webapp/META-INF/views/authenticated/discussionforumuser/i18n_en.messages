@@ -1,0 +1,8 @@
+autheticated.discussionforum.form.noMoreUsers = There are no more users that can be added to the thread
+authenticated.discussionforum.form.usersToAdd = Select the user to add
+autheticated.discussionforum.form.button.addUser = Add User
+
+autheticated.discussionforum.form.noMoreUsersToRemove = There are no more users that can be removed from the thread
+authenticated.discussionforum.form.usersToRemove = Select the user to remove
+autheticated.discussionforum.form.button.deleteUser = Remove user
+autheticated.discussionforum.form.button.return = Return

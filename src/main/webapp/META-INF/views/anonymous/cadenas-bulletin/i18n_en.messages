@@ -1,0 +1,14 @@
+anonymous.cadenasbulletin.form.label.name = Name:
+anonymous.cadenasbulletin.form.label.surname = Surname:
+anonymous.cadenasbulletin.form.label.gender = Gender:
+anonymous.cadenasbulletin.form.label.address = Address:
+anonymous.cadenasbulletin.form.label.city = City:
+anonymous.cadenasbulletin.form.label.email = Email:
+anonymous.cadenasbulletin.form.button.create = Create
+anonymous.cadenasbulletin.form.button.return = Return
+
+anonymous.cadenasbulletin.list.label.name = Name:
+anonymous.cadenasbulletin.list.label.surname = Surname:
+anonymous.cadenasbulletin.list.label.address = Address:
+anonymous.cadenasbulletin.list.label.city = City:
+anonymous.cadenasbulletin.list.label.email = Email:

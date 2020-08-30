@@ -1,0 +1,12 @@
+anonymous.pinerobulletin.form.label.name = Name:
+anonymous.pinerobulletin.form.label.address = Address:
+anonymous.pinerobulletin.form.label.email = Email:
+anonymous.pinerobulletin.form.label.description = Description:
+anonymous.pinerobulletin.form.button.create = Create
+anonymous.pinerobulletin.form.button.return = Return
+
+anonymous.pinerobulletin.list.label.name = Name
+anonymous.pinerobulletin.list.label.address = Address
+anonymous.pinerobulletin.list.label.email = Email
+anonymous.pinerobulletin.list.label.date = Date
+anonymous.pinerobulletin.list.label.description = Description

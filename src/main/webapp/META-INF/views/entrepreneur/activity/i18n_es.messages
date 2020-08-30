@@ -1,0 +1,21 @@
+entrepreneur.activity.form.label.title = Titulo
+entrepreneur.activity.form.label.startDate = Fecha de inicio
+entrepreneur.activity.form.label.endDate = Fecha de fin
+entrepreneur.activity.form.label.budget = Presupuesto
+
+entrepreneur.activity.list.investmentRound.title = Titulo de la Ronda de Inversión 
+entrepreneur.activity.list.label.title = Titulo
+entrepreneur.activity.list.label.startDate = Fecha de inicio
+entrepreneur.activity.list.label.endDate = Fecha de fin
+entrepreneur.activity.list.label.budget = Presupuesto
+
+entrepreneur.activity.error.total = La suma de los presupuestos de las actividades no puede superar el presupuesto total de la ronda de inversión
+
+entrepreneur.activity.error.title.spam = Este mensaje ha sido catalogado como spam
+entrepreneur.activity.error.moneyCurrency = La moneda debe  ser EUROS (€)
+entrepreneur.activity.error.noNegMoney = La cantidad debe ser positiva
+
+entrepreneur.activity.form.button.create = Crear
+entrepreneur.activity.form.button.update = Editar
+entrepreneur.activity.form.button.return = Volver
+

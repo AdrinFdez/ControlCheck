@@ -1,0 +1,20 @@
+patron.banner.list.label.slogan = Slogan
+patron.banner.list.label.imageurl = Image URL
+
+patron.banner.form.label.slogan = Slogan
+patron.banner.form.label.imageurl = Image URL
+patron.banner.form.label.targeturl = Target URL
+patron.banner.form.label.creditCard = Credit Card Number
+
+patron.banner.nocreditcard.error = You need a Credit Card to create a Commercial Banner
+
+patron.banner.form.button.create = Create
+patron.banner.form.button.update = Update
+patron.banner.form.button.delete = Delete
+patron.banner.form.button.return = Return
+
+patron.banner.error.imageurl.spam = The image url is considered spam
+patron.banner.error.slogan.spam = The slogan is considered spam
+patron.banner.error.targeturl.spam = The target url is considered spam
+
+patron.banner.nocreditcard.error = You have not credit card

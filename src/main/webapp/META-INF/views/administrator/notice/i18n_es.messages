@@ -1,0 +1,17 @@
+administrator.notice.list.label.headerPicture = Imagen de encabezado
+administrator.notice.list.label.title = Título
+administrator.notice.list.label.deadlineDate = Fecha de fin
+
+administrator.notice.form.label.headerPicture = Imagen de encabezado
+administrator.notice.form.label.title = Título
+administrator.notice.form.label.creationDate = Fecha de creación
+administrator.notice.form.label.deadlineDate = Fecha de fin
+administrator.notice.form.label.body = Cuerpo
+administrator.notice.form.label.optionalLink = Enlace Opcional
+
+administrator.notice.form.button.create = Crear
+administrator.notice.form.button.return = Volver
+
+administrator.notice.error.deadlineDate = La fecha de fin introducida debe ser en el futuro
+administrator.notice.form.label.accept = Aceptar
+administrator.notice.error.accept = Tienes que aceptar

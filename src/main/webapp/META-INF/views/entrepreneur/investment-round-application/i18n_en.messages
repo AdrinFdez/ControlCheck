@@ -1,0 +1,18 @@
+entrepreneur.investmentRoundApplication.list.label.ticker = Ticker
+entrepreneur.investmentRoundApplication.list.label.creationMoment = Creation Moment
+entrepreneur.investmentRoundApplication.list.label.offer = Offer
+entrepreneur.investmentRoundApplication.list.label.statement = Statement
+
+entrepreneur.investmentRoundApplication.form.label.ticker = Ticker
+entrepreneur.investmentRoundApplication.form.label.creationMoment = Creation Moment
+entrepreneur.investmentRoundApplication.form.label.statement = Statement
+entrepreneur.investmentRoundApplication.form.label.offer = Offer
+entrepreneur.investmentRoundApplication.form.label.justification = Justification 
+
+entrepreneur.investmentRoundApplication.message.investmentRound = Investment Round
+
+entrepreneur.investmentRoundApplication.error.justification.spam = This message has been classified as spam
+
+entrepreneur.investmentRoundApplication.form.button.accept = Accept
+entrepreneur.investmentRoundApplication.form.button.reject = Reject
+entrepreneur.investmentRoundApplication.form.button.return = Return

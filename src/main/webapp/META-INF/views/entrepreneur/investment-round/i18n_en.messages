@@ -1,0 +1,40 @@
+
+entrepreneur.investmentRound.list.label.title = Title
+entrepreneur.investmentRound.list.label.description = Description 
+
+entrepreneur.investmentRound.form.label.ticker = Ticker
+entrepreneur.investmentRound.form.label.creationMoment = Creation Date
+entrepreneur.investmentRound.form.label.kind = Kind
+entrepreneur.investmentRound.form.label.title = Title
+entrepreneur.investmentRound.form.label.description = Description
+entrepreneur.investmentRound.form.label.money = Money
+entrepreneur.investmentRound.form.label.link = Link
+entrepreneur.investmentRound.form.label.status = Status
+entrepreneur.investmentRound.form.label.text = Request to the investors
+
+entrepreneur.investmentRound.form.button.create = Create
+entrepreneur.investmentRound.form.button.update = Update
+entrepreneur.investmentRound.form.button.delete = Delete
+entrepreneur.investmentRound.form.button.publish = Publish
+
+entrepreneur.activity.form.button.addActivity = Add Activity
+entrepreneur.investmentRound.message.activity = See the Work Programme for this Investment Round
+
+entrepreneur.investmentRound.error.moneyCurrency = The currency must be EUROS (€)
+entrepreneur.InvestmentRound.error.noNegMoney = The amount must be positive
+entrepreneur.InvestmentRound.error.ticker = Ticker is taken
+entrepreneur.InvestmentRound.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
+entrepreneur.InvestmentRound.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
+entrepreneur.investmentRound.message.investmentRoundApplication = Investment Round Application's List
+
+entrepreneur.discussionforum.investmentRound.form.button.list = Discussion Forums' List
+entrepreneur.discussionforum.investmentRound.form.button.create = Create a Discussion Forum
+
+entrepreneur.investment-round.message.accounting-record = Accounting Records
+
+entrepreneur.investmentRound.error.title.spam = This message has been classified as spam
+entrepreneur.investmentRound.error.description.spam = This message has been classified as spam
+entrepreneur.investmentRound.error.text.spam = This message has been classified as spam
+entrepreneur.investmentRound.error.update = It is not possible to delete the Investment Round because applications exists on this one
+
+entrepreneur.investmentRound.form.button.return = Return

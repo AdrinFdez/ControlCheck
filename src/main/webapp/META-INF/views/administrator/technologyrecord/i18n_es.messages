@@ -1,0 +1,22 @@
+administrator.technologyrecord.list.label.title = Título
+administrator.technologyrecord.list.label.sector = Sector
+administrator.technologyrecord.list.label.inventorName = Nombre del Inventor
+administrator.technologyrecord.list.label.description = Descripción
+administrator.technologyrecord.list.label.website = Web
+administrator.technologyrecord.list.label.email = Correo electrónico
+administrator.technologyrecord.list.label.openSource = ¿Es de fuente abierta?
+administrator.technologyrecord.list.label.rating = Valoración
+
+administrator.technologyrecord.form.label.title = Título
+administrator.technologyrecord.form.label.sector = Sector
+administrator.technologyrecord.form.label.inventorName = Nombre del Inventor
+administrator.technologyrecord.form.label.description = Descripción
+administrator.technologyrecord.form.label.website = Web
+administrator.technologyrecord.form.label.email = Correo electrónico
+administrator.technologyrecord.form.label.openSource = ¿Es de fuente abierta?
+administrator.technologyrecord.form.label.rating = Valoración
+
+administrator.technologyrecord.form.button.update = Actualizar
+administrator.technologyrecord.form.button.delete = Borrar
+administrator.technologyrecord.form.button.return = Volver
+administrator.technologyrecord.form.button.create = Crear

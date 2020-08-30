@@ -1,0 +1,23 @@
+###### List ######
+
+authenticated.accounting-record.list.label.title = Título
+authenticated.accounting-record.list.label.body = Cuerpo
+authenticated.accounting-record.list.button.return = Volver
+
+###### Form ######
+
+authenticated.accounting-record.form.label.title = Título
+authenticated.accounting-record.form.label.status = ¿Está para publicar?
+authenticated.accounting-record.form.label.creationMoment = Momento de Creación
+authenticated.accounting-record.form.label.body = Cuerpo
+
+authenticated.accounting-record.form.label.username = Contable
+authenticated.accounting-record.form.label.investment-round.ticker = Ticker
+authenticated.accounting-record.form.label.investment-round.title = Título de Ronda de Inversión
+authenticated.accounting-record.form.label.investment-round.description = Descripción de Ronda de Inversión
+
+###### Button ######
+
+authenticated.accounting-record.form.button.investment-round = Mostrar Ronda de Inversión
+authenticated.accounting-record.form.button.return = Volver
+

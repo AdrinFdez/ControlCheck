@@ -1,0 +1,40 @@
+
+entrepreneur.investmentRound.list.label.title = Titulo
+entrepreneur.investmentRound.list.label.description = Descripcion
+
+entrepreneur.investmentRound.form.label.ticker = Ticker
+entrepreneur.investmentRound.form.label.creationMoment = Fecha de creacion
+entrepreneur.investmentRound.form.label.kind = Tipo
+entrepreneur.investmentRound.form.label.title = Titulo
+entrepreneur.investmentRound.form.label.description = Descripcion
+entrepreneur.investmentRound.form.label.money = Cantidad
+entrepreneur.investmentRound.form.label.link = Link
+entrepreneur.investmentRound.form.label.status = Estado
+entrepreneur.investmentRound.form.label.text = Petición al inversor
+
+entrepreneur.investmentRound.form.button.create = Crear
+entrepreneur.investmentRound.form.button.update = Editar
+entrepreneur.investmentRound.form.button.delete = Borrar
+entrepreneur.investmentRound.form.button.publish = Publicar
+
+entrepreneur.activity.form.button.addActivity = Añadir Actividad
+entrepreneur.investmentRound.message.activity = Ver el Programa de Trabajo de la Ronda de Inversión
+
+entrepreneur.investmentRound.error.moneyCurrency = La moneda debe  ser EUROS (€)
+entrepreneur.InvestmentRound.error.noNegMoney = La cantidad debe ser positiva
+entrepreneur.InvestmentRound.error.ticker = Este ticker ya está en uso
+entrepreneur.InvestmentRound.error.ticker1 = El ticker debe ser SSS-YY-NNNNNN donde SSS son las tres primeras letras de su sector (si este tiene 1 o 2 letras, debe rellenar con X, por ejemplo, XXA), YY son las dos ultimas cifras del año de creacion y NNNNNN un número entre 0 y 999999
+entrepreneur.InvestmentRound.error.total = La Ronda de Inversiones no puede ser publicada porque los presupuestos no suman la cantidad total de dinero en la ronda.
+entrepreneur.investmentRound.message.investmentRoundApplication = Lista de Aplicaciones a la Ronda de Inversión
+
+entrepreneur.discussionforum.investmentRound.form.button.list = Lista de Foros de Discusión
+entrepreneur.discussionforum.investmentRound.form.button.create = Crear un Foro de Discusión
+
+entrepreneur.investment-round.message.accounting-record = Registros de Contabilidad
+
+entrepreneur.investmentRound.error.title.spam = Este mensaje ha sido catalogado como spam
+entrepreneur.investmentRound.error.description.spam = Este mensaje ha sido catalogado como spam
+entrepreneur.investmentRound.error.text.spam = Este mensaje ha sido catalogado como spam
+entrepreneur.investmentRound.error.update = No es posible eliminar la Ronda de Inversión porque existen aplicaciones a esta
+
+entrepreneur.investmentRound.form.button.return = Volver

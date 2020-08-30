@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="patron/credit-card/list" extends="master">
+		<put-attribute name="body" type="template" value="../patron/creditCard/list.jsp" />
+	</definition>
+	
+	<definition name="patron/credit-card/form" extends="master">
+		<put-attribute name="body" type="template" value="../patron/creditCard/form.jsp" />
+	</definition>
+	
+</tiles-definitions>

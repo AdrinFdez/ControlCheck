@@ -1,0 +1,18 @@
+authenticated.discussionforum.list.label.title = Titulo
+authenticated.discussionforum.list.label.creationMoment = Momento de Creación
+authenticated.discussionforum.list.label.ownerId = Id del Propietario
+
+authenticated.discussionforum.form.label.title = Titulo
+authenticated.discussionforum.form.label.creationMoment = Momento de Creación
+authenticated.discussionforum.form.label.ownerId = Id del Propietario
+
+authenticated.discussionforum.form.button.create = Crear
+authenticated.discussionforum.form.button.delete = Borrar
+authenticated.discussionforum.form.button.return = Volver
+
+authenticated.discussionforum.user.form.button.list = Ver los usuarios del foro
+authenticated.discussionforum.user.form.button.add = Añadir usuarios al foro
+authenticated.discussionforum.user.form.button.delete = Eliminar usuarios del foro
+
+authenticated.discussionforum.message.form.button.list = Ver los mensajes del foro
+authenticated.discussionforum.message.form.button.create = Añadir mensaje

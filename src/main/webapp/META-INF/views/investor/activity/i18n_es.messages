@@ -1,0 +1,13 @@
+investor.activity.form.label.title = Titulo
+investor.activity.form.label.startDate = Fecha de inicio
+investor.activity.form.label.endDate = Fecha de fin
+investor.activity.form.label.budget = Presupuesto
+
+investor.activity.list.investmentRound.title = Titulo de la Ronda de Inversión 
+investor.activity.list.label.title = Titulo
+investor.activity.list.label.startDate = Fecha de inicio
+investor.activity.list.label.endDate = Fecha de fin
+investor.activity.list.label.budget = Presupuesto
+
+investor.activity.form.button.return = Volver
+

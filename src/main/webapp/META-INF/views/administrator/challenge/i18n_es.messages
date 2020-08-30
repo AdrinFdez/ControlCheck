@@ -1,0 +1,43 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.challenge.list.label.title = Título
+administrator.challenge.list.label.deadlineDate = Fecha de fin
+administrator.challenge.list.label.description = Descripción
+
+administrator.challenge.form.label.title = Título
+administrator.challenge.form.label.deadlineDate = Fecha de fin
+administrator.challenge.form.label.description = Descripción
+
+administrator.challenge.form.label.expert = Experto
+administrator.challenge.form.label.goalExpert = Meta Experto
+administrator.challenge.form.label.rewardExpert = Recompensa Experto
+
+administrator.challenge.form.label.average = Promedio
+administrator.challenge.form.label.goalAverage = Meta Promedio
+administrator.challenge.form.label.rewardAverage = Recompensa Promedio
+
+administrator.challenge.form.label.rookie = Novato
+administrator.challenge.form.label.goalRookie = Meta Novato
+administrator.challenge.form.label.rewardRookie = Recompensa Novato
+
+administrator.challenge.form.button.return = Volver
+
+administrator.challenge.form.button.create = Nuevo Reto
+administrator.challenge.form.button.update = Actualizar
+administrator.challenge.form.button.delete = Borrar
+
+
+
+administrator.challenge.error.expert-higher-than-average = La recompensa de Experto debe ser mayor que la de Promedio.
+administrator.challenge.error.average-more-than-rookie = La recompensa de Promedio debe ser mayor que la de Novato.
+administrator.challenge.error.wrong-currency = Solo se admiten euros.
+administrator.challenge.error.past-deadline = La fecha de fin debe ser futura.
+administrator.challenge.error.past-deadline-1month = La fecha de fin debe durar al menos 1 mes.

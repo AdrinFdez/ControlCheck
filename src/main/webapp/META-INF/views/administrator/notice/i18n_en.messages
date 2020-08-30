@@ -1,0 +1,17 @@
+administrator.notice.list.label.headerPicture = Header Picture
+administrator.notice.list.label.title = Title
+administrator.notice.list.label.deadlineDate = Deadline Date
+
+administrator.notice.form.label.headerPicture = Header Picture
+administrator.notice.form.label.title = Title
+administrator.notice.form.label.creationDate = Creation Date
+administrator.notice.form.label.deadlineDate = Deadline Date
+administrator.notice.form.label.body = Body
+administrator.notice.form.label.optionalLink = Optional Link
+
+administrator.notice.form.button.create = Create
+administrator.notice.form.button.return = Return
+
+administrator.notice.error.deadlineDate = The introduced deadline must be in the future
+administrator.notice.form.label.accept = Accept
+administrator.notice.error.accept = You must accept
