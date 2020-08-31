@@ -137,7 +137,7 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 
 			if (!errors.hasErrors("link") && !errors.hasErrors("pass")) {
 				boolean notLink = entity.getLink().isEmpty() && !entity.getPass().isEmpty();
-				errors.state(request, !notLink, "pass", "investor.investmentRoundApplication.error.pass");
+				errors.state(request, !notLink, "link", "investor.investmentRoundApplication.error.link");
 			}
 
 		}
@@ -150,6 +150,11 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 		assert entity != null;
 		Date fecha = new Date(System.currentTimeMillis() - 1);
 		entity.setCreationMoment(fecha);
+		if (entity.getPass() != null && entity.getPass() != "") {
+			entity.setChecked(false);
+		} else {
+			entity.setChecked(true);
+		}
 		this.repository.save(entity);
 
 	}

@@ -9,9 +9,14 @@ entrepreneur.investmentRoundApplication.form.label.statement = Statement
 entrepreneur.investmentRoundApplication.form.label.offer = Offer
 entrepreneur.investmentRoundApplication.form.label.justification = Justification 
 
+entrepreneur.investmentRoundApplication.form.label.password = Password
+entrepreneur.investmentRoundApplication.form.label.link = Link
+entrepreneur.investmentRoundApplication.form.button.check = Validate Password
+
 entrepreneur.investmentRoundApplication.message.investmentRound = Investment Round
 
 entrepreneur.investmentRoundApplication.error.justification.spam = This message has been classified as spam
+entrepreneur.investmentRoundApplication.error.password = The password is not correct
 
 entrepreneur.investmentRoundApplication.form.button.accept = Accept
 entrepreneur.investmentRoundApplication.form.button.reject = Reject

@@ -18,6 +18,8 @@ investor.investmentRoundApplication.error.noMayorOffer = The amount must not be 
 investor.investmentRoundApplication.error.ticker = Ticker is taken
 investor.investmentRoundApplication.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
 investor.investmentRoundApplication.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
+investor.investmentRoundApplication.error.pass = The password does not match the pattern
+investor.investmentRoundApplication.error.link = The password option is only available if there is a link
 
 investor.investmentRoundApplication.form.button.create = Create
 investor.investmentRoundApplication.form.button.update = Update

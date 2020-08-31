@@ -41,7 +41,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 			"avgMoneyInquires2", "stdMoneyInquires2", "minMoneyOvertures1", "maxMoneyOvertures1", "avgMoneyOvertures1", "stdMoneyOvertures1", "minMoneyOvertures2", "maxMoneyOvertures2", "avgMoneyOvertures2", "stdMoneyOvertures2",
 			"ratioOfTechnologiesPerSource", "numberOfTechnologiesGroupedBySector", "ratioOfToolsPerSource", "numberOfToolsGroupedBySector", "avgInvestmentRoundPerEntrepreneur", "avgInvestmentRoundApplicationPerEntrepreneur",
 			"avgInvestmentRoundApplicationPerInvestor", "ratioOfInvestmentRoundByKind", "ratioOfInvestmentRoundApplicationByStatus", "numberOfApplicationsPendingPerDayFromLast15Days", "numberOfApplicationsAcceptedPerDayFromLast15Days",
-			"numberOfApplicationsRejectedPerDayFromLast15Days");
+			"numberOfApplicationsRejectedPerDayFromLast15Days", "ratioOfInvestmentRoundByRequest", "ratioOfInvestmentRoundApplicationByLink", "ratioOfInvestmentRoundApplicationByPassword");
 
 	}
 
@@ -195,6 +195,40 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 			iP++;
 		}
 		d.setNumberOfApplicationsPendingPerDayFromLast15Days(datosPending);
+
+		// Control Check
+
+		List<List<String>> ratioOfInvestmentRoundByRequest = new ArrayList<List<String>>();
+		List<String> list0Request = new ArrayList<String>();
+		list0Request.add("Yes");
+		list0Request.add(String.valueOf(this.repository.getRatioOfInvestmentRoundByRequest()));
+		ratioOfInvestmentRoundByRequest.add(list0Request);
+		List<String> list1Request = new ArrayList<String>();
+		list1Request.add("No");
+		list1Request.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundByRequest()));
+		ratioOfInvestmentRoundByRequest.add(list1Request);
+		List<List<String>> ratioOfInvestmentRoundApplicationByLink = new ArrayList<List<String>>();
+		List<String> list0Link = new ArrayList<String>();
+		list0Link.add("Yes");
+		list0Link.add(String.valueOf(this.repository.getRatioOfInvestmentRoundApplicationByLink()));
+		ratioOfInvestmentRoundApplicationByLink.add(list0Link);
+		List<String> list1Link = new ArrayList<String>();
+		list1Link.add("No");
+		list1Link.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundApplicationByLink()));
+		ratioOfInvestmentRoundApplicationByLink.add(list1Link);
+		List<List<String>> ratioOfInvestmentRoundApplicationByPassword = new ArrayList<List<String>>();
+		List<String> list0Pass = new ArrayList<String>();
+		list0Pass.add("Yes");
+		list0Pass.add(String.valueOf(this.repository.getRatioOfInvestmentRoundApplicationByPassword()));
+		ratioOfInvestmentRoundApplicationByPassword.add(list0Pass);
+		List<String> list1Pass = new ArrayList<String>();
+		list1Pass.add("No");
+		list1Pass.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundApplicationByPassword()));
+		ratioOfInvestmentRoundApplicationByPassword.add(list1Pass);
+
+		d.setRatioOfInvestmentRoundByRequest(ratioOfInvestmentRoundByRequest);
+		d.setRatioOfInvestmentRoundApplicationByLink(ratioOfInvestmentRoundApplicationByLink);
+		d.setRatioOfInvestmentRoundApplicationByPassword(ratioOfInvestmentRoundApplicationByPassword);
 
 		result.add(d);
 

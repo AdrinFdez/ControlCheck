@@ -61,3 +61,8 @@ administrator.dashboard.list.label.avgInvestmentRoundApplicationPerInvestor = Ap
 
 administrator.dashboard.chart.ratioOfInvestmentRoundByKind = Ratio de ronda de inversión por tipos
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByStatus = Aplicación a ronda de inversión por estado
+
+####################### Control Check ##############################
+administrator.dashboard.chart.ratioOfInvestmentRoundByRequest = Ratio de Rondas de Inversión que tienen peticion
+administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByLink = Ratio de Aplicaciones a Rondas de Inversión que tienen Enlace
+administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByPassword = Ratio de Aplicaciones a Rondas de Inversión que tienen Contraseña

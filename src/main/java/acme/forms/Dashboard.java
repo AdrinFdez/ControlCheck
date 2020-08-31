@@ -61,4 +61,9 @@ public class Dashboard implements Serializable {
 	String[][]					numberOfApplicationsAcceptedPerDayFromLast15Days;
 	String[][]					numberOfApplicationsRejectedPerDayFromLast15Days;
 
+	// Control Check
+	List<List<String>>			ratioOfInvestmentRoundByRequest;
+	List<List<String>>			ratioOfInvestmentRoundApplicationByLink;
+	List<List<String>>			ratioOfInvestmentRoundApplicationByPassword;
+
 }

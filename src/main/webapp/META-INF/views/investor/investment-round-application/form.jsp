@@ -63,15 +63,12 @@
 			
 	</jstl:if>
 	
-	
-	
-	
 	<acme:form-return code="investor.investmentRoundApplication.form.button.return"/>
 	<br>
-	<!--<jstl:if test="${command != 'create' }">
+	<jstl:if test="${command != 'create' }">
 		<a href = /acme-incubator/investor/investment-round/show?id=<jstl:out value="${investmentRound.id}"></jstl:out>>
 			<acme:message code="investor.investmentRoundApplication.message.investmentRound"/>
 		</a>
-	</jstl:if>-->
+	</jstl:if>
 
 </acme:form>

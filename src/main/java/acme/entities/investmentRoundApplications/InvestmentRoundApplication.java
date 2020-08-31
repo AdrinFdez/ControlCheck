@@ -66,4 +66,6 @@ public class InvestmentRoundApplication extends DomainEntity {
 
 	private String				pass;
 
+	private Boolean				checked;
+
 }

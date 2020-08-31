@@ -31,7 +31,6 @@ public class Activity extends DomainEntity {
 	@NotBlank
 	private String				title;
 
-	@NotNull
 	private Date				startDate;
 
 	@NotNull
