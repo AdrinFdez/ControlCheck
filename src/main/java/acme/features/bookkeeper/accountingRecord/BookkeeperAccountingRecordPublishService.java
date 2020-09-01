@@ -1,6 +1,8 @@
 
 package acme.features.bookkeeper.accountingRecord;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +36,7 @@ public class BookkeeperAccountingRecordPublishService implements AbstractUpdateS
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors);
+		request.bind(entity, errors, "creationMoment");
 
 	}
 
@@ -44,7 +46,7 @@ public class BookkeeperAccountingRecordPublishService implements AbstractUpdateS
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "body", "creationMoment", "bookkeeper.firm", "investmentRound.title", "investmentRound.ticker", "status");
+		request.unbind(entity, model, "title", "body", "bookkeeper.firm", "investmentRound.title", "investmentRound.ticker", "status");
 
 	}
 
@@ -69,6 +71,9 @@ public class BookkeeperAccountingRecordPublishService implements AbstractUpdateS
 	public void update(final Request<AccountingRecord> request, final AccountingRecord entity) {
 		assert request != null;
 		assert entity != null;
+		Date moment;
+		moment = new Date(System.currentTimeMillis() - 1);
+		entity.setCreationMoment(moment);
 		entity.setStatus("published");
 		this.repository.save(entity);
 	}

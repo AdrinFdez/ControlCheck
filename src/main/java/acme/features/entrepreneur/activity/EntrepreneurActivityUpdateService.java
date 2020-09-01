@@ -69,7 +69,7 @@ public class EntrepreneurActivityUpdateService implements AbstractUpdateService<
 		CustomParams c = this.repository.getCustomParams();
 
 		if (!errors.hasErrors("budget")) {
-			boolean moneyCurrencyMax = entity.getBudget().getCurrency().equals("EUROS") || entity.getBudget().getCurrency().equals("€");
+			boolean moneyCurrencyMax = entity.getBudget().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "budget", "entrepreneur.activity.error.moneyCurrency");
 			boolean noNegSalary = entity.getBudget().getAmount() <= 0.0;
 			errors.state(request, !noNegSalary, "budget", "entrepreneur.activity.error.noNegMoney");

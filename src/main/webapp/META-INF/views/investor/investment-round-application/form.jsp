@@ -9,7 +9,7 @@
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.ticker" path="ticker" placeholder="SSS-YY-NNNNNN (SSS- SECTOR / YY- YEAR / NNNNNN - NUMBER)"/>
 	</jstl:if>
 	
-	<jstl:if test="${ command == 'create' }">
+	<jstl:if test="${ command == 'create' && investmentRound.text != null}">
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.link" path="link"/>
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.pass" path="pass"/>
 	</jstl:if>

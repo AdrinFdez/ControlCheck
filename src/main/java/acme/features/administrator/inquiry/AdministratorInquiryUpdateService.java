@@ -32,7 +32,7 @@ public class AdministratorInquiryUpdateService implements AbstractUpdateService<
 		assert entity != null;
 		assert errors != null;
 
-		request.bind(entity, errors, "creation");
+		request.bind(entity, errors);
 	}
 
 	@Override
@@ -84,9 +84,6 @@ public class AdministratorInquiryUpdateService implements AbstractUpdateService<
 		assert request != null;
 		assert entity != null;
 
-		Date moment;
-		moment = new Date(System.currentTimeMillis() - 1);
-		entity.setCreation(moment);
 		this.repository.save(entity);
 
 	}

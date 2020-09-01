@@ -41,9 +41,11 @@ public class InvestmentRound extends DomainEntity {
 	@Pattern(regexp = "^(SEED|ANGEL|SERIES-A|SERIES-B|SERIES-C|BRIDGE)$")
 	@NotBlank
 	private String				kind;
+
 	@Length(max = 255)
 	@NotBlank
 	private String				title;
+
 	@Length(max = 255)
 	@NotBlank
 	private String				description;
@@ -52,6 +54,7 @@ public class InvestmentRound extends DomainEntity {
 	@Valid
 	private Money				money;
 
+	@Column(length = 2048)
 	@Length(max = 2048)
 	@URL
 	private String				link;

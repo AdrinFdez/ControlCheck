@@ -21,10 +21,10 @@ entrepreneur.activity.form.button.addActivity = Add Activity
 entrepreneur.investmentRound.message.activity = See the Work Programme for this Investment Round
 
 entrepreneur.investmentRound.error.moneyCurrency = The currency must be EUROS (€)
-entrepreneur.InvestmentRound.error.noNegMoney = The amount must be positive
-entrepreneur.InvestmentRound.error.ticker = Ticker is taken
-entrepreneur.InvestmentRound.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
-entrepreneur.InvestmentRound.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
+entrepreneur.investmentRound.error.noNegMoney = The amount must be positive
+entrepreneur.investmentRound.error.ticker = Ticker is taken
+entrepreneur.investmentRound.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
+entrepreneur.investmentRound.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
 entrepreneur.investmentRound.message.investmentRoundApplication = Investment Round Application's List
 
 entrepreneur.discussionforum.investmentRound.form.button.list = Discussion Forums' List

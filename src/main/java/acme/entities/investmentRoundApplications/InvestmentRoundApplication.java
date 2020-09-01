@@ -48,6 +48,7 @@ public class InvestmentRoundApplication extends DomainEntity {
 	@NotNull
 	private Money				offer;
 
+	@Column(length = 1024)
 	@Length(max = 1024)
 	private String				justification;
 

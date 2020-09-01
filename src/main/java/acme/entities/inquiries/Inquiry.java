@@ -3,6 +3,7 @@ package acme.entities.inquiries;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -40,6 +41,7 @@ public class Inquiry extends DomainEntity {
 	@NotNull
 	private Date				deadline;
 
+	@Column(length = 1024)
 	@Length(max = 1024)
 	@NotBlank
 	private String				description;
@@ -54,6 +56,7 @@ public class Inquiry extends DomainEntity {
 
 	@NotBlank
 	@Email
+	@Column(length = 320)
 	@Length(max = 320)
 	private String				mail;
 

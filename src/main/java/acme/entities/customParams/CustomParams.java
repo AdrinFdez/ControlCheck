@@ -1,6 +1,7 @@
 
 package acme.entities.customParams;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -19,7 +20,9 @@ import lombok.Setter;
 public class CustomParams extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
-	@Length(max = 255)
+
+	@Column(length = 1024)
+	@Length(max = 1024)
 	@NotBlank
 	String						spamWords;
 

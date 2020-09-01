@@ -41,10 +41,10 @@
 	</jstl:if>
 	
 	<jstl:if test="${status == 'published'}">
-		<acme:form-double readonly="true" code="entrepreneur.investmentRound.form.label.money" path="money"/>
+		<acme:form-money readonly="true" code="entrepreneur.investmentRound.form.label.money" path="money"/>
 	</jstl:if>	
 	<jstl:if test="${command == 'create' || status== 'draft' }">
-		<acme:form-double code="entrepreneur.investmentRound.form.label.money" path="money"/>
+		<acme:form-money code="entrepreneur.investmentRound.form.label.money" path="money"/>
 	</jstl:if>	
 	
 	<jstl:if test="${status == 'published'}">

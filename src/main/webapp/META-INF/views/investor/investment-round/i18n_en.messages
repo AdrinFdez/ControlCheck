@@ -9,14 +9,16 @@ investor.investmentRound.form.label.description = Description
 investor.investmentRound.form.label.money = Money
 investor.investmentRound.form.label.link = Link
 investor.investmentRound.form.label.status = Status
+investor.investmentRound.form.label.text = Request to the investors
 
 investor.investmentRound.message.activity = See the Work Programme for this Investment Round
 
 investor.investmentRound.error.moneyCurrency = The currency must be EUROS (€)
-investor.InvestmentRound.error.noNegMoney = The amount must be positive
-investor.InvestmentRound.error.ticker = Ticker is taken
-investor.InvestmentRound.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
-investor.InvestmentRound.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
+investor.investmentRound.error.noNegMoney = The amount must be positive
+investor.investmentRound.error.ticker = Ticker is taken
+investor.investmentRound.error.ticker1 = The ticker must be SSS-YY-NNNNN where SSS are the first three letters of your sector (if it has 1 or 2 letters, you must fill in X, for example, XXA), YY are the last two digits of the year of creation and NNNNNN a number between 0 and 999999
+investor.investmentRound.error.total =  The Investment Round can't be published because the budgets don´t sum up to the total amount of money in the round.
 
 investor.investmentRoundApplication.form.button.apply = Apply
 investor.investmentRound.form.button.return = Return
+investor.investment-round.message.accounting-record = Accounting Records 
