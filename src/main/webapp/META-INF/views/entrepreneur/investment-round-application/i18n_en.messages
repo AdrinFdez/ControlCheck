@@ -15,6 +15,7 @@ entrepreneur.investmentRoundApplication.form.button.check = Validate Password
 
 entrepreneur.investmentRoundApplication.message.investmentRound = Investment Round
 
+entrepreneur.investmentRoundApplication.error.justification = Reject the application needs a justification 
 entrepreneur.investmentRoundApplication.error.justification.spam = This message has been classified as spam
 entrepreneur.investmentRoundApplication.error.password = The password is not correct
 

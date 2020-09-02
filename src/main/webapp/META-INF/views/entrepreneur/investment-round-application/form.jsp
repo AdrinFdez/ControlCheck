@@ -5,6 +5,7 @@
 
 <acme:form>
 	<acme:form-hidden path="id"/>
+	<acme:form-hidden path="link"/>
 	<acme:form-hidden path="pass"/>
 	<acme:form-hidden path="checked"/>
 	<acme:form-textbox readonly="true" code="entrepreneur.investmentRoundApplication.form.label.ticker" path="ticker"/>
@@ -12,11 +13,15 @@
 	<acme:form-textbox readonly="true" code="entrepreneur.investmentRoundApplication.form.label.statement" path="statement"/>
 	<acme:form-money readonly="true" code="entrepreneur.investmentRoundApplication.form.label.offer" path="offer"/>
 	
-	<jstl:if test="${pass == null || pass == '' && link != null && checked == true}">
-		<acme:form-url readonly="true" code="entrepreneur.investmentRoundApplication.form.label.link" path="link"/>
+	<jstl:if test="${(pass == null || pass == '') && link != null}">
+		<acme:form-url readonly="true" code="entrepreneur.investmentRoundApplication.form.label.link" path="link" placeholder=""/>
 	</jstl:if>
 	
-	<jstl:if test="${pass != null && pass != '' && checked == false}">
+	<jstl:if test="${(pass != null && pass != '') && link != null && checked == true}">
+		<acme:form-url readonly="true" code="entrepreneur.investmentRoundApplication.form.label.link" path="link" placeholder=""/>
+	</jstl:if>
+	
+	<jstl:if test="${pass != null && pass != '' && link != null && checked == false}">
 		<acme:form-password code="entrepreneur.investmentRoundApplication.form.label.password" path="check"/>
 	</jstl:if>
 		

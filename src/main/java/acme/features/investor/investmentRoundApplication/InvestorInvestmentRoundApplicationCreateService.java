@@ -120,7 +120,12 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 
 			errors.state(request, alfin, "ticker", "investor.investmentRoundApplication.error.ticker1");
 
-			if (!errors.hasErrors("pass") && !entity.getPass().isEmpty()) {
+			if (!errors.hasErrors("link") && !errors.hasErrors("pass")) {
+				boolean notLink = (entity.getLink() == null || entity.getLink() == "") && entity.getPass() != null && entity.getPass() != "";
+				errors.state(request, !notLink, "link", "investor.investmentRoundApplication.error.link");
+			}
+
+			if (!errors.hasErrors("pass") && entity.getPass() != null && entity.getPass() != "") {
 				int letters = 0;
 				int digits = 0;
 				int punctuation = 0;
@@ -140,11 +145,6 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 				errors.state(request, lengthPassword, "pass", "investor.investmentRoundApplication.error.pass");
 			}
 
-			if (!errors.hasErrors("link") && !errors.hasErrors("pass")) {
-				boolean notLink = entity.getLink().isEmpty() && !entity.getPass().isEmpty();
-				errors.state(request, !notLink, "link", "investor.investmentRoundApplication.error.link");
-			}
-
 		}
 
 	}
@@ -155,11 +155,16 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 		assert entity != null;
 		Date fecha = new Date(System.currentTimeMillis() - 1);
 		entity.setCreationMoment(fecha);
-		if (entity.getPass() != null && entity.getPass() != "") {
-			entity.setChecked(false);
+		if (entity.getLink() != null && entity.getLink() != "") {
+			if (entity.getPass() != null && entity.getPass() != "") {
+				entity.setChecked(false);
+			} else {
+				entity.setChecked(true);
+			}
 		} else {
 			entity.setChecked(true);
 		}
+
 		this.repository.save(entity);
 
 	}
