@@ -12,7 +12,7 @@ authenticated.investmentRound.form.label.link = Link
 authenticated.investmentRound.form.button.return = Return
 
 authenticated.investmentRound.message.activity = See the Work Programme for this Investment Round
-authenticated.investmentRound.list.message.discussionforum = Discussion Forums
-authenticated.investmentRound.create.message.discussionforum = Create a Forum
+authenticated.investmentRound.discussionforum.form.button.list = Discussion Forums
+authenticated.investmentRound.discussionforum.form.button.create = Create a Forum
 
 authenticated.investment-round.message.accounting-record = Accounting Records

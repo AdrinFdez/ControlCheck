@@ -51,6 +51,14 @@ public class AuthenticatedDiscussionForumShowService implements AbstractShowServ
 		String[][] datafromUsers = this.repository.findDataFromUsers(usersOnTheThread);
 		model.setAttribute("usersData", datafromUsers);
 		model.setAttribute("authId", request.getPrincipal().getActiveRoleId());
+
+		Principal principal = request.getPrincipal();
+		boolean isOwner = false;
+
+		if (entity.getOwner().getId() == principal.getActiveRoleId()) {
+			isOwner = true;
+		}
+		model.setAttribute("owner", isOwner);
 	}
 
 	@Override

@@ -142,7 +142,7 @@ master.menu.authenticated.list.challenge = Lista de Retos
 #INVESTMENT ROUNDS
 # master.menu.authenticated.investmentRound ##################################################
 master.menu.authenticated.investmentRound = Rondas de inversión
-master.menu.authenticated.investmentRound.list = Lista de Rondas de inversión
+master.menu.authenticated.investmentRound.list = Lista de Rondas de inversión activas
 
 #DISCUSSION FORUMS
 # master.menu.authenticated.discussionforum ##################################################
@@ -160,7 +160,8 @@ master.menu.entrepreneur.investmentRound.listCreationMoment = Mi Lista de Aplica
 #-----------------------------------------------------------------------------
 #INVESTOR
 master.menu.investor = Menu Inversor
-master.menu.investor.investmentRound.list = Lista de Rondas de Inversión
+master.menu.investor.investmentRound.list = Lista de Rondas de Inversión para aplicar
+master.menu.investor.investmentRound.listmine = Mi lista de Rondas de Inversión
 master.menu.investor.investmentRoundApplication.list = Mi lista de Aplicaciones a Rondas de Inversión
 
 #-----------------------------------------------------------------------------

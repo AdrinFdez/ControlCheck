@@ -1,13 +1,18 @@
 
 package acme.features.authenticated.investmentRound;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.investmentRounds.InvestmentRound;
+import acme.entities.roles.Entrepreneur;
+import acme.entities.roles.Investor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
@@ -30,6 +35,25 @@ public class AuthenticatedInvestmentRoundShowService implements AbstractShowServ
 		assert model != null;
 
 		request.unbind(entity, model, "ticker", "creationMoment", "kind", "title", "description", "money", "link");
+
+		Principal principal = request.getPrincipal();
+		Investor investor = this.repository.findInvestor(principal.getAccountId());
+		Entrepreneur entrepreneur = this.repository.findEntrepreneur(principal.getAccountId());
+
+		boolean hasApplied = false;
+
+		if (investor != null) {
+			Collection<InvestmentRound> iRApplied = this.repository.findManyById(principal.getAccountId());
+			if (iRApplied.contains(entity)) {
+				hasApplied = true;
+			}
+		} else if (entrepreneur != null) {
+			Collection<InvestmentRound> irEntrepreneur = this.repository.findManyMine(entrepreneur.getId());
+			if (!irEntrepreneur.isEmpty()) {
+				hasApplied = true;
+			}
+		}
+		model.setAttribute("application", hasApplied);
 	}
 
 	@Override
