@@ -460,28 +460,28 @@ var pieChartIRAByLink = new Chart(CanvasIRAByLink, {
 </script>
 <script type = "text/javascript">
 $(document).ready(function(){
-var CanvasIRAByPass = document.getElementById("investmentRoundApplicationByPass");
+var CanvasIRAByPassword = document.getElementById("investmentRoundApplicationByPassword");
 Chart.defaults.global.defaultFontFamily = "Lato";
 Chart.defaults.global.defaultFontSize = 18;
-var DataIRAByPass = {
+var DataIRAByPassword = {
 	    labels: [
-				<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPass}" var = "item">
+				<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPassword}" var = "item">
 				"<jstl:out value = "${item[0]}" />" ,
 				</jstl:forEach>
 	    ],
 	    datasets: [
 	        {
 	            data: [
-	            	<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPass}" var = "item">
+	            	<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPassword}" var = "item">
 					"<jstl:out value = "${item[1]}" />" ,
 					</jstl:forEach>
 	            ],
 	            backgroundColor :["red", "green", "blue", "purple", "magenta"]
 	        }]
 	};
-var pieChartIRAByPass = new Chart(CanvasIRAByPass, {
+var pieChartIRAByPassword = new Chart(CanvasIRAByPassword, {
 	  type: 'pie',
-	  data: DataIRAByPass
+	  data: DataIRAByPassword
 	});
 });
 </script>
