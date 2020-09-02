@@ -9,7 +9,7 @@
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.ticker" path="ticker" placeholder="SSS-YY-NNNNNN (SSS- SECTOR / YY- YEAR / NNNNNN - NUMBER)"/>
 	</jstl:if>
 	
-	<jstl:if test="${ command == 'create' && investmentRound.text != null}">
+	<jstl:if test="${ command == 'create' && investmentRound.text != null && investmentRound.text != ''}">
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.link" path="link"/>
 		<acme:form-textbox code="investor.investmentRoundApplication.form.label.pass" path="pass"/>
 	</jstl:if>
@@ -30,7 +30,7 @@
 	<acme:form-hidden path="idInvestmentRound"/>
 	
 	<acme:form-submit code="investor.investmentRoundApplication.form.button.create" 
-	action="/investor/investment-round-application/create"
+	action="/investor/investment-round-application/create?idInvestmentRound=${idInvestmentRound}"
 	test="${command == 'create'}"/>
 	
 	<jstl:if test="${statement == 'pending' }">

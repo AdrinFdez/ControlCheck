@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.investmentRoundApplications.InvestmentRoundApplication;
+import acme.entities.investmentRounds.InvestmentRound;
 import acme.entities.roles.Investor;
 import acme.framework.components.Errors;
 import acme.framework.components.HttpMethod;
@@ -34,6 +35,10 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 		assert entity != null;
 		assert errors != null;
 		request.bind(entity, errors);
+
+		int idInvestmentRound = request.getModel().getInteger("idInvestmentRound");
+		InvestmentRound ir = this.repository.findInvestmentRoundById(idInvestmentRound);
+		request.getModel().setAttribute("investmentRound", ir);
 
 	}
 
