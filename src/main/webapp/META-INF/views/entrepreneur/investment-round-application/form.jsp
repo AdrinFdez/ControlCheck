@@ -24,15 +24,14 @@
 	<jstl:if test="${pass != null && pass != '' && link != null && checked == false}">
 		<acme:form-password code="entrepreneur.investmentRoundApplication.form.label.password" path="check"/>
 	</jstl:if>
+	
+	<acme:form-submit test="${pass != null && pass != '' && link != null && checked == false}"
+		code="entrepreneur.investmentRoundApplication.form.button.check"
+		action="/entrepreneur/investment-round-application/check?id=${id}"/>
 		
 	<jstl:if test="${statement == 'rejected' }">
 		<acme:form-textarea readonly="true" code="entrepreneur.investmentRoundApplication.form.label.justification" path="justification"/>
 	</jstl:if>
-	
-	<acme:form-submit test="${(command == 'show' || command == 'check') && checked == false}"
-		code="entrepreneur.investmentRoundApplication.form.button.check"
-		action="/entrepreneur/investment-round-application/check?id=${id}"/>
-	
 	
 	<jstl:if test="${statement == 'pending' }">
 		<acme:form-textarea code="entrepreneur.investmentRoundApplication.form.label.justification" path="justification"/>
@@ -45,10 +44,16 @@
 		<acme:form-submit test="${command == 'reject' }"
 		code="entrepreneur.investmentRoundApplication.form.button.accept"
 		action="/entrepreneur/investment-round-application/accept?id=${id}"/>
+		<acme:form-submit test="${command == 'check' }"
+		code="entrepreneur.investmentRoundApplication.form.button.accept"
+		action="/entrepreneur/investment-round-application/accept?id=${id}"/>
 		<acme:form-submit test="${command == 'show' }"
 		code="entrepreneur.investmentRoundApplication.form.button.reject"
 		action="/entrepreneur/investment-round-application/reject?id=${id}"/>
 		<acme:form-submit test="${command == 'reject' }"
+		code="entrepreneur.investmentRoundApplication.form.button.reject"
+		action="/entrepreneur/investment-round-application/reject?id=${id}"/>
+		<acme:form-submit test="${command == 'check' }"
 		code="entrepreneur.investmentRoundApplication.form.button.reject"
 		action="/entrepreneur/investment-round-application/reject?id=${id}"/>
 	</jstl:if>

@@ -45,7 +45,7 @@ public class EntrepreneurInvestmentRoundApplicationRejectService implements Abst
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "ticker", "creationMoment", "statement", "offer", "investmentRound", "link", "pass");
+		request.bind(entity, errors, "ticker", "creationMoment", "statement", "offer", "investmentRound", "link", "pass", "checked");
 
 	}
 
