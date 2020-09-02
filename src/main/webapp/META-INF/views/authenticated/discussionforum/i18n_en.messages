@@ -1,13 +1,14 @@
 authenticated.discussionforum.list.label.title = Title
 authenticated.discussionforum.list.label.creationMoment = Creation Moment
 authenticated.discussionforum.list.label.ownerId = Owner ID
+authenticated.discussionforum.list.label.investmentRound = InvestmentRound
 
 authenticated.discussionforum.form.label.title = Title
 authenticated.discussionforum.form.label.creationMoment = Creation Moment
 authenticated.discussionforum.form.label.ownerId = Owner ID
 
 authenticated.discussionforum.form.button.create = Create
-authenticated.discussionforum.form.button.delete = Delete
+authenticated.discussionforum.form.button.delete = Delete a Forum
 authenticated.discussionforum.form.button.return = Return
 
 authenticated.discussionforum.user.form.button.list = Show the users on the Forum

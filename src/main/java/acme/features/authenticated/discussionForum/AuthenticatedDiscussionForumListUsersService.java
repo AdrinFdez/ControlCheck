@@ -22,13 +22,20 @@ public class AuthenticatedDiscussionForumListUsersService implements AbstractLis
 	@Override
 	public boolean authorise(final Request<Authenticated> request) {
 		assert request != null;
-		boolean result;
+
+		boolean result = false;
 		int discussionForumId;
 		Principal principal = request.getPrincipal();
 		int authId = principal.getActiveRoleId();
 		discussionForumId = request.getModel().getInteger("id");
 		Integer cuenta = this.repository.checkIfUserIsInTheForum(authId, discussionForumId);
-		result = cuenta > 0 ? true : false;
+		Integer plus = this.repository.checkIfUserIsOwner(authId, discussionForumId);
+
+		if (cuenta > 0) {
+			if (plus > 0) {
+				result = true;
+			}
+		}
 
 		return result;
 	}

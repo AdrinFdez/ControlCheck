@@ -55,9 +55,9 @@
     create table `banner` (
        `id` integer not null,
         `version` integer not null,
-        `imageurl` varchar(255),
+        `imageurl` varchar(2048),
         `slogan` varchar(255),
-        `targeturl` varchar(255),
+        `targeturl` varchar(2048),
         `administrator_id` integer,
         `credit_card_id` integer not null,
         `patron_id` integer,
@@ -86,9 +86,9 @@
     create table `cadenas_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `address` varchar(255),
+        `address` varchar(1024),
         `city` varchar(255),
-        `email` varchar(255),
+        `email` varchar(320),
         `gender` varchar(255),
         `name` varchar(255),
         `surname` varchar(255),
@@ -130,7 +130,7 @@
     create table `cruz_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `email` varchar(255),
+        `email` varchar(320),
         `gender` varchar(255),
         `name` varchar(255),
         `phone_number` varchar(255),
@@ -142,7 +142,7 @@
         `version` integer not null,
         `sectors` varchar(255),
         `spam_threshold` double precision,
-        `spam_words` varchar(255),
+        `spam_words` varchar(1024),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -170,10 +170,10 @@
     create table `fernandez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `address` varchar(255),
+        `address` varchar(1024),
         `birthday` datetime(6),
         `country` varchar(255),
-        `email` varchar(255),
+        `email` varchar(320),
         `name` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -183,8 +183,8 @@
         `version` integer not null,
         `creation` datetime(6),
         `deadline` datetime(6),
-        `description` varchar(255),
-        `mail` varchar(255),
+        `description` varchar(1024),
+        `mail` varchar(320),
         `money_max_amount` double precision,
         `money_max_currency` varchar(255),
         `money_min_amount` double precision,
@@ -199,7 +199,7 @@
         `creation_moment` datetime(6),
         `description` varchar(255),
         `kind` varchar(255),
-        `link` varchar(255),
+        `link` varchar(2048),
         `money_amount` double precision,
         `money_currency` varchar(255),
         `status` varchar(255),
@@ -213,8 +213,9 @@
     create table `investment_round_application` (
        `id` integer not null,
         `version` integer not null,
+        `checked` bit,
         `creation_moment` datetime(6),
-        `justification` varchar(255),
+        `justification` varchar(1024),
         `link` varchar(255),
         `offer_amount` double precision,
         `offer_currency` varchar(255),
@@ -240,7 +241,7 @@
     create table `message` (
        `id` integer not null,
         `version` integer not null,
-        `body` varchar(255),
+        `body` varchar(1024),
         `creation_moment` datetime(6),
         `tags` varchar(255),
         `title` varchar(255),
@@ -255,9 +256,9 @@
         `body` varchar(255),
         `creation_date` datetime(6),
         `deadline_date` datetime(6),
-        `header_picture` varchar(255),
-        `optional_link1` varchar(255),
-        `optional_link2` varchar(255),
+        `header_picture` varchar(2048),
+        `optional_link1` varchar(2048),
+        `optional_link2` varchar(2048),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -267,7 +268,7 @@
         `version` integer not null,
         `creation` datetime(6),
         `deadline` datetime(6),
-        `description` varchar(255),
+        `description` varchar(1024),
         `mail` varchar(255),
         `money_max_amount` double precision,
         `money_max_currency` varchar(255),
@@ -292,7 +293,7 @@
         `address` varchar(255),
         `date` datetime(6),
         `description` varchar(255),
-        `email` varchar(255),
+        `email` varchar(320),
         `name` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -301,7 +302,7 @@
        `id` integer not null,
         `version` integer not null,
         `comment` varchar(255),
-        `email` varchar(255),
+        `email` varchar(320),
         `name` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -309,28 +310,28 @@
     create table `technology_record` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
-        `email` varchar(255),
+        `description` varchar(1024),
+        `email` varchar(320),
         `inventor_name` varchar(255),
         `open_source` bit,
         `rating` integer,
         `sector` varchar(255),
         `title` varchar(255),
-        `website` varchar(255),
+        `website` varchar(2048),
         primary key (`id`)
     ) engine=InnoDB;
 
     create table `tool_record` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
-        `email` varchar(255),
+        `description` varchar(1024),
+        `email` varchar(320),
         `inventor_name` varchar(255),
         `open_source` bit,
         `rating` integer,
         `sector` varchar(255),
         `title` varchar(255),
-        `website` varchar(255),
+        `website` varchar(2048),
         primary key (`id`)
     ) engine=InnoDB;
 

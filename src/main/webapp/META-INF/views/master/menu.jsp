@@ -79,7 +79,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.list.challenge" action="/authenticated/challenge/list"/>
 		<acme:menu-separator/> <!-- InvestmentRound -->
 			<acme:menu-suboption code="master.menu.authenticated.investmentRound.list" action="/authenticated/investment-round/list"/>
-		<acme:menu-separator/> <!-- DiscussionForum -->
+		<acme:menu-separator/> <!-- DiscussionForum involved-->
 			<acme:menu-suboption code="master.menu.authenticated.discussionforum.listmine" action="/authenticated/discussion-forum/list-mine"/>
 		</acme:menu-option>
 		
@@ -94,6 +94,7 @@
 		<!-- INVESTOR -->
 		<acme:menu-option code="master.menu.investor" access="hasRole('Investor')">
 			<acme:menu-suboption code="master.menu.investor.investmentRound.list" action="/investor/investment-round/list"/>
+			<acme:menu-suboption code="master.menu.investor.investmentRound.listmine" action="/authenticated/investment-round/list_mine_investor"/>
 			<acme:menu-suboption code="master.menu.investor.investmentRoundApplication.list" action="/investor/investment-round-application/list_mine"/>
 		</acme:menu-option>
 

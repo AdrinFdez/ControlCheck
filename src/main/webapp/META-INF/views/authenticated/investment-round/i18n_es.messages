@@ -8,11 +8,11 @@ authenticated.investmentRound.form.label.kind = Tipo
 authenticated.investmentRound.form.label.title = Titulo
 authenticated.investmentRound.form.label.description = Descripcion
 authenticated.investmentRound.form.label.money = Cantidad
-authenticated.investmentRound.form.label.link = Link
+authenticated.investmentRound.form.label.link = Enlace
 authenticated.investmentRound.form.button.return = Volver
 
 authenticated.investmentRound.message.activity = Ver el Programa de Trabajo de la Ronda de Inversión
-authenticated.investmentRound.message.discussionforum = Foros de discusión
-authenticated.investmentRound.create.message.discussionforum = Crear un Foro
+authenticated.investmentRound.discussionforum.form.button.list = Foros de discusión
+authenticated.investmentRound.discussionforum.form.button.create = Crear un Foro
 
 authenticated.investment-round.message.accounting-record = Registros de Contabilidad

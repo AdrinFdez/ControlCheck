@@ -10,10 +10,11 @@ import acme.entities.investmentRounds.InvestmentRound;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
+import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedInvestmentRoundListService implements AbstractListService<Authenticated, InvestmentRound> {
+public class AuthenticatedInvestmentRoundListMineService implements AbstractListService<Authenticated, InvestmentRound> {
 
 	@Autowired
 	AuthenticatedInvestmentRoundRepository repository;
@@ -29,7 +30,11 @@ public class AuthenticatedInvestmentRoundListService implements AbstractListServ
 	public Collection<InvestmentRound> findMany(final Request<InvestmentRound> request) {
 		assert request != null;
 		Collection<InvestmentRound> result;
-		result = this.repository.findManyActive();
+
+		Principal principal = request.getPrincipal();
+
+		result = this.repository.findManyById(principal.getAccountId());
+
 		return result;
 
 	}

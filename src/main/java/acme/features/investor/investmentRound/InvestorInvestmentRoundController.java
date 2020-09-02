@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.components.CustomCommand;
 import acme.entities.investmentRounds.InvestmentRound;
 import acme.entities.roles.Investor;
 import acme.framework.components.BasicCommand;
@@ -19,10 +20,13 @@ public class InvestorInvestmentRoundController extends AbstractController<Invest
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private InvestorInvestmentRoundListService	listService;
+	private InvestorInvestmentRoundListService		listService;
 
 	@Autowired
-	private InvestorInvestmentRoundnShowService	showService;
+	private InvestorInvestmentRoundnShowService		showService;
+
+	@Autowired
+	private InvestorInvestmentRoundListMineService	listMineService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -31,6 +35,7 @@ public class InvestorInvestmentRoundController extends AbstractController<Invest
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listMineService);
 	}
 
 }
