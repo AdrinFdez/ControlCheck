@@ -207,6 +207,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		list1Request.add("No");
 		list1Request.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundByRequest()));
 		ratioOfInvestmentRoundByRequest.add(list1Request);
+
 		List<List<String>> ratioOfInvestmentRoundApplicationByLink = new ArrayList<List<String>>();
 		List<String> list0Link = new ArrayList<String>();
 		list0Link.add("Yes");
@@ -216,6 +217,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		list1Link.add("No");
 		list1Link.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundApplicationByLink()));
 		ratioOfInvestmentRoundApplicationByLink.add(list1Link);
+
 		List<List<String>> ratioOfInvestmentRoundApplicationByPassword = new ArrayList<List<String>>();
 		List<String> list0Pass = new ArrayList<String>();
 		list0Pass.add("Yes");

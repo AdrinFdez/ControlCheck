@@ -89,7 +89,7 @@ public class InvestorInvestmentRoundApplicationCreateService implements Abstract
 
 		if (!errors.hasErrors("ticker")) {
 			boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;
-			errors.state(request, !repetido, "ticker", "investor.InvestmentRoundApplication.error.ticker");
+			errors.state(request, !repetido, "ticker", "investor.investmentRoundApplication.error.ticker");
 
 			String[] ticker = entity.getTicker().split("-");
 			boolean comprobacion1 = ticker.length == 3;
