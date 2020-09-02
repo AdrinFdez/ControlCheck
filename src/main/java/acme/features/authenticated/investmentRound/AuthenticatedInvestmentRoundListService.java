@@ -29,7 +29,7 @@ public class AuthenticatedInvestmentRoundListService implements AbstractListServ
 	public Collection<InvestmentRound> findMany(final Request<InvestmentRound> request) {
 		assert request != null;
 		Collection<InvestmentRound> result;
-		result = this.repository.findMany();
+		result = this.repository.findManyActive();
 		return result;
 
 	}

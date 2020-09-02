@@ -21,10 +21,10 @@ entrepreneur.activity.form.button.addActivity = Añadir Actividad
 entrepreneur.investmentRound.message.activity = Ver el Programa de Trabajo de la Ronda de Inversión
 
 entrepreneur.investmentRound.error.moneyCurrency = La moneda debe  ser EUROS (€)
-entrepreneur.InvestmentRound.error.noNegMoney = La cantidad debe ser positiva
-entrepreneur.InvestmentRound.error.ticker = Este ticker ya está en uso
-entrepreneur.InvestmentRound.error.ticker1 = El ticker debe ser SSS-YY-NNNNNN donde SSS son las tres primeras letras de su sector (si este tiene 1 o 2 letras, debe rellenar con X, por ejemplo, XXA), YY son las dos ultimas cifras del año de creacion y NNNNNN un número entre 0 y 999999
-entrepreneur.InvestmentRound.error.total = La Ronda de Inversiones no puede ser publicada porque los presupuestos no suman la cantidad total de dinero en la ronda.
+entrepreneur.investmentRound.error.noNegMoney = La cantidad debe ser positiva
+entrepreneur.investmentRound.error.ticker = Este ticker ya está en uso
+entrepreneur.investmentRound.error.ticker1 = El ticker debe ser SSS-YY-NNNNNN donde SSS son las tres primeras letras de su sector (si este tiene 1 o 2 letras, debe rellenar con X, por ejemplo, XXA), YY son las dos ultimas cifras del año de creacion y NNNNNN un número entre 0 y 999999
+entrepreneur.investmentRound.error.total = La Ronda de Inversiones no puede ser publicada porque los presupuestos no suman la cantidad total de dinero en la ronda.
 entrepreneur.investmentRound.message.investmentRoundApplication = Lista de Aplicaciones a la Ronda de Inversión
 
 entrepreneur.discussionforum.investmentRound.form.button.list = Lista de Foros de Discusión

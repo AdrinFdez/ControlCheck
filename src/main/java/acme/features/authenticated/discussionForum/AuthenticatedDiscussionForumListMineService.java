@@ -37,7 +37,7 @@ public class AuthenticatedDiscussionForumListMineService implements AbstractList
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "creationMoment");
+		request.unbind(entity, model, "title", "creationMoment", "investmentRound.title");
 	}
 
 	@Override

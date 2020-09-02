@@ -3,6 +3,7 @@ package acme.entities.discussionForums;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
@@ -32,8 +33,11 @@ public class Message extends DomainEntity {
 
 	@NotNull
 	private Date				creationMoment;
+
 	@Length(max = 255)
 	private String				tags;
+
+	@Column(length = 1024)
 	@Length(max = 1024)
 	@NotBlank
 	private String				body;

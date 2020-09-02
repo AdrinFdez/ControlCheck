@@ -29,7 +29,7 @@ public class EntrepreneurInvestmentRoundApplicationShowService implements Abstra
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "creationMoment", "statement", "offer", "justification", "investmentRound", "link", "pass");
+		request.unbind(entity, model, "ticker", "creationMoment", "statement", "offer", "justification", "investmentRound", "link", "pass", "checked");
 	}
 
 	@Override

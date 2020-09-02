@@ -41,7 +41,7 @@ public class AdministratorOvertureUpdateService implements AbstractUpdateService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "creation", "deadline", "description", "moneyMin", "moneyMax", "mail");
+		request.unbind(entity, model, "title", "deadline", "description", "moneyMin", "moneyMax", "mail");
 	}
 
 	@Override

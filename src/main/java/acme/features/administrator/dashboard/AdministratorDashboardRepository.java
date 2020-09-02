@@ -82,4 +82,13 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select a from InvestmentRoundApplication a")
 	List<InvestmentRoundApplication> findPending();
 
+	@Query("select 100.0 * count(i) / (select count(k) from InvestmentRound k) from InvestmentRound i where i.text != null and i.text != ''")
+	Double getRatioOfInvestmentRoundByRequest();
+
+	@Query("select 100.0 * count(i) / (select count(s) from InvestmentRoundApplication s) from InvestmentRoundApplication i where i.link != null and i.link != ''")
+	Double getRatioOfInvestmentRoundApplicationByLink();
+
+	@Query("select 100.0 * count(i) / (select count(s) from InvestmentRoundApplication s) from InvestmentRoundApplication i where i.pass != null and i.pass != ''")
+	Double getRatioOfInvestmentRoundApplicationByPassword();
+
 }

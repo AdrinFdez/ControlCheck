@@ -1,0 +1,22 @@
+###### List ######
+
+investor.accounting-record.list.label.title = Title
+investor.accounting-record.list.label.body = Body
+investor.accounting-record.list.button.return = Return
+
+###### Form ######
+
+investor.accounting-record.form.label.title = Title
+investor.accounting-record.form.label.status = Is it for publishing mode?
+investor.accounting-record.form.label.creationMoment = Creation Moment
+investor.accounting-record.form.label.body = Body
+
+investor.accounting-record.form.label.username = Bookkeeper
+investor.accounting-record.form.label.investment-round.ticker = Ticker
+investor.accounting-record.form.label.investment-round.title = Investment Round Title
+investor.accounting-record.form.label.investment-round.description = Investment Round Description
+
+###### Button ######
+
+investor.accounting-record.form.button.investment-round = Show Investment Round
+investor.accounting-record.form.button.return = Return 

@@ -11,13 +11,15 @@
 	<acme:form-textarea code="investor.investmentRound.form.label.description" path="description"/>
 	<acme:form-double code="investor.investmentRound.form.label.money" path="money"/>
 	<acme:form-url code="investor.investmentRound.form.label.link" path="link"/>
+	<acme:form-textbox code="investor.investmentRound.form.label.text" path="text"/>
 	
 	<acme:form-submit test="${command == 'show' }"
 		method = "get"
 		code="investor.investmentRoundApplication.form.button.apply"
 		action="/investor/investment-round-application/create?idInvestmentRound=${id}"/>
 	
-	
+	<!-- Accounting REcord List -->
+   <acme:form-submit method="get" code="investor.investment-round.message.accounting-record" action= "/investor/accounting-record/list?idInvestmentRound=${id}"/>
 	
 	<acme:form-return code="entrepreneur.investmentRound.form.button.return"/>
 	

@@ -62,10 +62,10 @@ public class EntrepreneurInvestmentRoundPublishService implements AbstractUpdate
 		assert errors != null;
 
 		if (!errors.hasErrors("money")) {
-			boolean moneyCurrencyMax = entity.getMoney().getCurrency().equals("EUROS") || entity.getMoney().getCurrency().equals("€");
+			boolean moneyCurrencyMax = entity.getMoney().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "money", "entrepreneur.investmentRound.error.moneyCurrency");
 			boolean noNegSalary = entity.getMoney().getAmount() <= 0.0;
-			errors.state(request, !noNegSalary, "money", "entrepreneur.InvestmentRound.error.noNegMoney");
+			errors.state(request, !noNegSalary, "money", "entrepreneur.investmentRound.error.noNegMoney");
 		}
 
 		List<Activity> activities = this.repository.findActivitiesOfTheInvestmentRound(entity.getId());
@@ -78,7 +78,7 @@ public class EntrepreneurInvestmentRoundPublishService implements AbstractUpdate
 			total.setAmount(i);
 		}
 		boolean totalActivityMoney = moneyInvestment.getAmount().equals(total.getAmount());
-		errors.state(request, totalActivityMoney, "money", "entrepreneur.InvestmentRound.error.total");
+		errors.state(request, totalActivityMoney, "money", "entrepreneur.investmentRound.error.total");
 
 	}
 

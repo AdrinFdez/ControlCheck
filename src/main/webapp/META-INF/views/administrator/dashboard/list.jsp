@@ -118,6 +118,23 @@
 <acme:message code="administrator.dashboard.timeSeries.Rejected"/> 
 <canvas id = "timeSeriesRejected" > </canvas>
 </div>
+<br>
+		<!-- Control Check -->
+		
+<div style="height:30%; width:30%;display:inline-block">
+<acme:message code="administrator.dashboard.chart.ratioOfInvestmentRoundByRequest"/> 
+<canvas id = "investmentRoundByRequest" > </canvas>
+</div>
+
+<div style="height:30%; width:30%;display:inline-block">
+<acme:message code="administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByLink"/> 
+<canvas id = "investmentRoundApplicationByLink" > </canvas>
+</div>
+
+<div style="height:30%; width:30%;display:inline-block">
+<acme:message code="administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByPassword"/> 
+<canvas id = "investmentRoundApplicationByPassword" > </canvas>
+</div>
 
 <script type = "text/javascript">
 $(document).ready(function(){
@@ -383,3 +400,88 @@ $(document).ready(function(){
 		});
 });
 </script> 
+
+		<!-- Control Check -->
+		
+<script type = "text/javascript">
+$(document).ready(function(){
+var CanvasIRByRequest = document.getElementById("investmentRoundByRequest");
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+var DataIRByRequest = {
+	    labels: [
+				<jstl:forEach items = "${ratioOfInvestmentRoundByRequest}" var = "item">
+				"<jstl:out value = "${item[0]}" />" ,
+				</jstl:forEach>
+	    ],
+	    datasets: [
+	        {
+	            data: [
+	            	<jstl:forEach items = "${ratioOfInvestmentRoundByRequest}" var = "item">
+					"<jstl:out value = "${item[1]}" />" ,
+					</jstl:forEach>
+	            ],
+	            backgroundColor :["red", "green", "blue", "purple", "magenta"]
+	        }]
+	};
+var pieChartIRByRequest = new Chart(CanvasIRByRequest, {
+	  type: 'pie',
+	  data: DataIRByRequest
+	});
+});
+
+</script>
+<script type = "text/javascript">
+$(document).ready(function(){
+var CanvasIRAByLink = document.getElementById("investmentRoundApplicationByLink");
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+var DataIRAByLink = {
+	    labels: [
+				<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByLink}" var = "item">
+				"<jstl:out value = "${item[0]}" />" ,
+				</jstl:forEach>
+	    ],
+	    datasets: [
+	        {
+	            data: [
+	            	<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByLink}" var = "item">
+					"<jstl:out value = "${item[1]}" />" ,
+					</jstl:forEach>
+	            ],
+	            backgroundColor :["red", "green", "blue", "purple", "magenta"]
+	        }]
+	};
+var pieChartIRAByLink = new Chart(CanvasIRAByLink, {
+	  type: 'pie',
+	  data: DataIRAByLink
+	});
+});
+</script>
+<script type = "text/javascript">
+$(document).ready(function(){
+var CanvasIRAByPassword = document.getElementById("investmentRoundApplicationByPassword");
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+var DataIRAByPassword = {
+	    labels: [
+				<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPassword}" var = "item">
+				"<jstl:out value = "${item[0]}" />" ,
+				</jstl:forEach>
+	    ],
+	    datasets: [
+	        {
+	            data: [
+	            	<jstl:forEach items = "${ratioOfInvestmentRoundApplicationByPassword}" var = "item">
+					"<jstl:out value = "${item[1]}" />" ,
+					</jstl:forEach>
+	            ],
+	            backgroundColor :["red", "green", "blue", "purple", "magenta"]
+	        }]
+	};
+var pieChartIRAByPassword = new Chart(CanvasIRAByPassword, {
+	  type: 'pie',
+	  data: DataIRAByPassword
+	});
+});
+</script>

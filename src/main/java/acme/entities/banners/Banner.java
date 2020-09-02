@@ -1,6 +1,7 @@
 
 package acme.entities.banners;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
@@ -29,6 +30,7 @@ public class Banner extends DomainEntity {
 
 	@NotBlank
 	@URL
+	@Column(length = 2048)
 	@Length(max = 2048)
 	private String				imageurl;
 
@@ -38,6 +40,7 @@ public class Banner extends DomainEntity {
 
 	@NotBlank
 	@URL
+	@Column(length = 2048)
 	@Length(max = 2048)
 	private String				targeturl;
 

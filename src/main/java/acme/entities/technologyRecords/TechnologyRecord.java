@@ -1,6 +1,7 @@
 
 package acme.entities.technologyRecords;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
@@ -36,15 +37,18 @@ public class TechnologyRecord extends DomainEntity {
 	@NotBlank
 	private String				inventorName;
 
+	@Column(length = 1024)
 	@Length(max = 1024)
 	@NotBlank
 	private String				description;
 
+	@Column(length = 2048)
 	@Length(max = 2048)
 	@NotBlank
 	@URL
 	private String				website;
 
+	@Column(length = 320)
 	@Length(max = 320)
 	@NotBlank
 	@Email

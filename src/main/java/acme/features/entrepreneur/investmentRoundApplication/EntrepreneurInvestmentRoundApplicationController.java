@@ -51,7 +51,7 @@ public class EntrepreneurInvestmentRoundApplicationController extends AbstractCo
 		super.addCustomCommand(CustomCommand.LIST_CREATIONMOMENT, BasicCommand.LIST, this.listCreationService);
 		super.addCustomCommand(CustomCommand.ACCEPT, BasicCommand.UPDATE, this.acceptService);
 		super.addCustomCommand(CustomCommand.REJECT, BasicCommand.UPDATE, this.rejectService);
-		super.addCustomCommand(CustomCommand.CHECK, BasicCommand.SHOW, this.checkedService);
+		super.addCustomCommand(CustomCommand.CHECK, BasicCommand.UPDATE, this.checkedService);
 	}
 
 }

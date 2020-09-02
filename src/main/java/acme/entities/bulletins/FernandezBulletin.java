@@ -3,11 +3,13 @@ package acme.entities.bulletins;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
@@ -34,6 +36,7 @@ public class FernandezBulletin extends DomainEntity {
 	@NotBlank
 	private String				country;
 
+	@Column(length = 320)
 	@Length(max = 320)
 	@NotBlank
 	@Email
@@ -41,8 +44,10 @@ public class FernandezBulletin extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
+	@NotNull
 	private Date				birthday;
 
+	@Column(length = 1024)
 	@Length(max = 1024)
 	@NotBlank
 	private String				address;

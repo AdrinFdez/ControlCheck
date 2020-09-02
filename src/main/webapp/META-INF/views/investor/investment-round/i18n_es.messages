@@ -9,6 +9,7 @@ investor.investmentRound.form.label.description = Descripcion
 investor.investmentRound.form.label.money = Cantidad
 investor.investmentRound.form.label.link = Link
 investor.investmentRound.form.label.status = Status
+investor.investmentRound.form.label.text = Petición al inversor
 
 investor.investmentRound.message.activity = Ver el Programa de Trabajo de la Ronda de Inversión
 
@@ -20,3 +21,4 @@ investor.InvestmentRound.error.total = La Ronda de Inversiones no puede ser publ
 
 investor.investmentRoundApplication.form.button.apply = Aplicar
 investor.investmentRound.form.button.return = Volver
+investor.investment-round.message.accounting-record = Registros de Contabilidad

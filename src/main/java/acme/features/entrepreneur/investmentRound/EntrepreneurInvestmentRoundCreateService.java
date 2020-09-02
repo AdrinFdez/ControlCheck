@@ -71,7 +71,7 @@ public class EntrepreneurInvestmentRoundCreateService implements AbstractCreateS
 		CustomParams c = this.repository.getCustomParams();
 
 		if (!errors.hasErrors("money")) {
-			boolean moneyCurrencyMax = entity.getMoney().getCurrency().equals("EUROS") || entity.getMoney().getCurrency().equals("€");
+			boolean moneyCurrencyMax = entity.getMoney().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "money", "entrepreneur.investmentRound.error.moneyCurrency");
 			boolean noNegSalary = entity.getMoney().getAmount() <= 0.0;
 			errors.state(request, !noNegSalary, "money", "entrepreneur.investmentRound.error.noNegMoney");

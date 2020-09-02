@@ -3,6 +3,7 @@ package acme.entities.notices;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -23,10 +24,13 @@ import lombok.Setter;
 public class Notice extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
+
+	@Column(length = 2048)
 	@Length(max = 2048)
 	@NotBlank
 	@URL
 	private String				headerPicture;
+
 	@Length(max = 255)
 	@NotBlank
 	private String				title;
@@ -43,10 +47,12 @@ public class Notice extends DomainEntity {
 	@NotBlank
 	private String				body;
 
+	@Column(length = 2048)
 	@Length(max = 2048)
 	@URL
 	private String				optionalLink1;
 
+	@Column(length = 2048)
 	@Length(max = 2048)
 	@URL
 	private String				optionalLink2;

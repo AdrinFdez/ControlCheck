@@ -12,13 +12,31 @@
 	<acme:form-textbox code="authenticated.investmentRound.form.label.money" path="money"/>
 	<acme:form-url code="authenticated.investmentRound.form.label.link" path="link"/>
 	
-	<!-- List Forum -->
-	<acme:form-submit method="get" code="authenticated.investmentRound.list.message.discussionforum" action="/authenticated/discussion-forum/list?idInvestment=${id}"/>
+	
 	<!-- List Accounting -->
 	<acme:form-submit method="get" code="authenticated.investment-round.message.accounting-record" action= "/authenticated/accounting-record/list?idInvestmentRound=${id}"/>
+	
+	<br>
+	<br>
+
+	<jstl:if test="${application == true}">
+		<!-- List Forum -->
+		<acme:form-submit method="get" code="authenticated.investmentRound.discussionforum.form.button.list" action="/authenticated/discussion-forum/list?idInvestment=${id}"/>
+
+		<!-- Create -->
+		<acme:form-submit method = "get" code = "authenticated.investmentRound.discussionforum.form.button.create" action="/authenticated/discussion-forum/create?idInvestmentRound=${id}"/>
+
+	</jstl:if>
+
+	<br>
+	<br>
+
+	
 	<!-- Return -->
 	<acme:form-return code="authenticated.investmentRound.form.button.return"/>
+	
 	<br>
+	
 	<jstl:if test="${command != 'create' }" > 
         <a href = /acme-incubator/authenticated/activity/list?idInvestmentRound=<jstl:out value="${id}"></jstl:out>>
     		<acme:message code="authenticated.investmentRound.message.activity"/>

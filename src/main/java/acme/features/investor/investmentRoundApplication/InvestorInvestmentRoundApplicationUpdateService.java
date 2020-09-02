@@ -33,7 +33,7 @@ public class InvestorInvestmentRoundApplicationUpdateService implements Abstract
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "status");
+		request.bind(entity, errors, "status", "creationMoment");
 
 	}
 
@@ -42,7 +42,7 @@ public class InvestorInvestmentRoundApplicationUpdateService implements Abstract
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "ticker", "creationMoment", "kind", "title", "description", "money", "link", "status", "link", "pass");
+		request.unbind(entity, model, "ticker", "kind", "title", "description", "money", "link", "status", "link", "pass");
 	}
 
 	@Override
@@ -59,7 +59,7 @@ public class InvestorInvestmentRoundApplicationUpdateService implements Abstract
 		assert errors != null;
 
 		if (!errors.hasErrors("money")) {
-			boolean moneyCurrencyMax = entity.getOffer().getCurrency().equals("EUROS") || entity.getOffer().getCurrency().equals("€");
+			boolean moneyCurrencyMax = entity.getOffer().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "offer", "investor.investmentRoundApplication.error.moneyCurrency");
 			boolean noNegSalary = entity.getOffer().getAmount() <= 0.0;
 			errors.state(request, !noNegSalary, "offer", "investor.investmentRoundApplication.error.noNegMoney");

@@ -41,10 +41,10 @@
 	</jstl:if>
 	
 	<jstl:if test="${status == 'published'}">
-		<acme:form-double readonly="true" code="entrepreneur.investmentRound.form.label.money" path="money"/>
+		<acme:form-money readonly="true" code="entrepreneur.investmentRound.form.label.money" path="money"/>
 	</jstl:if>	
 	<jstl:if test="${command == 'create' || status== 'draft' }">
-		<acme:form-double code="entrepreneur.investmentRound.form.label.money" path="money"/>
+		<acme:form-money code="entrepreneur.investmentRound.form.label.money" path="money"/>
 	</jstl:if>	
 	
 	<jstl:if test="${status == 'published'}">
@@ -107,12 +107,13 @@
      test="${command != 'create'  && status == 'draft'}"
      method = "get"/>
 
-  <!-- Accounting REcord List -->
+  <!-- Accounting Record List -->
   <acme:form-submit method="get" code="entrepreneur.investment-round.message.accounting-record" action= "/entrepreneur/accounting-record/list?idInvestmentRound=${id}"/>
-  <!-- Discussion Forum List -->
-	<acme:form-submit method="get" code="entrepreneur.discussionforum.investmentRound.form.button.list" action="/authenticated/discussion-forum/list?idInvestment=${id}"/>
-  <!-- Discussion Forum Create -->
-	<acme:form-submit test ="${command != 'create'}" method="get" code="entrepreneur.discussionforum.investmentRound.form.button.create" action= "/authenticated/discussion-forum/create?idInvestmentRound=${id}"/>
+  <!-- Discussion Forum List 
+	<acme:form-submit method="get" code="entrepreneur.discussionforum.investmentRound.form.button.list" action="/authenticated/discussion-forum/list?idInvestment=${id}"/>-->
+  <!-- Discussion Forum Create 
+	<acme:form-submit test ="${command != 'create'}" method="get" code="entrepreneur.discussionforum.investmentRound.form.button.create" action= "/authenticated/discussion-forum/create?idInvestmentRound=${id}"/>-->
+	
   <!-- Return -->
 	<acme:form-return code="entrepreneur.investmentRound.form.button.return"/>
 	

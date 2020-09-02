@@ -3,11 +3,13 @@ package acme.entities.bulletins;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Length;
@@ -29,9 +31,12 @@ public class PineroBulletin extends DomainEntity {
 	@Length(max = 255)
 	@NotBlank
 	private String				name;
+
 	@Length(max = 255)
 	@NotBlank
 	private String				address;
+
+	@Column(length = 320)
 	@Length(max = 320)
 	@NotBlank
 	@Email
@@ -39,7 +44,9 @@ public class PineroBulletin extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
+	@NotNull
 	private Date				date;
+
 	@Length(max = 255)
 	@NotBlank
 	private String				description;

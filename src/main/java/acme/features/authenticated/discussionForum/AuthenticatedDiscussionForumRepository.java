@@ -61,5 +61,8 @@ public interface AuthenticatedDiscussionForumRepository extends AbstractReposito
 
 	@Query("select  m from AuthenticatedDiscussionForum m where m.forum.id = ?1")
 	List<AuthenticatedDiscussionForum> findAuthenticatedForumByForum(int forumId);
-  
+
+	@Query("select count(p) from DiscussionForum  p where p.owner.id = ?1 and p.id = ?2")
+	Integer checkIfUserIsOwner(int authId, int discussionForumId);
+
 }

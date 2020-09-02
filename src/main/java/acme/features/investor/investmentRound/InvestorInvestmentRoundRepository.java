@@ -20,4 +20,7 @@ public interface InvestorInvestmentRoundRepository extends AbstractRepository {
 
 	@Query("select a.id from Investor a where a.userAccount.id = ?1")
 	int findInvestorId(int idUserAccount);
+
+	@Query("select i from InvestmentRound i where i.id in (SELECT r.investmentRound.id FROM InvestmentRoundApplication r where r.statement = 'accepted' and r.investor.id = ?1)")
+	Collection<InvestmentRound> findManyById(int idInvestor);
 }

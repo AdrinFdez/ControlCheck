@@ -46,7 +46,7 @@ public class EntrepreneurActivityAddService implements AbstractCreateService<Ent
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors);
+		request.bind(entity, errors, "startDate");
 
 	}
 
@@ -67,6 +67,8 @@ public class EntrepreneurActivityAddService implements AbstractCreateService<Ent
 		assert request != null;
 		int idInvestmentRound = request.getModel().getInteger("idInvestmentRound");
 		Activity a = new Activity();
+		Date t = new Date(System.currentTimeMillis() - 1);
+		a.setStartDate(t);
 		a.setWorkProgramme(this.repository.findByInvestment(idInvestmentRound));
 		return a;
 	}
@@ -80,7 +82,7 @@ public class EntrepreneurActivityAddService implements AbstractCreateService<Ent
 		CustomParams c = this.repository.getCustomParams();
 
 		if (!errors.hasErrors("budget")) {
-			boolean moneyCurrencyMax = entity.getBudget().getCurrency().equals("EUROS") || entity.getBudget().getCurrency().equals("€");
+			boolean moneyCurrencyMax = entity.getBudget().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "budget", "entrepreneur.activity.error.moneyCurrency");
 			boolean noNegSalary = entity.getBudget().getAmount() <= 0.0;
 			errors.state(request, !noNegSalary, "budget", "entrepreneur.activity.error.noNegMoney");
