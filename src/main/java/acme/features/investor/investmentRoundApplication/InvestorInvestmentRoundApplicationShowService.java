@@ -20,7 +20,11 @@ public class InvestorInvestmentRoundApplicationShowService implements AbstractSh
 	@Override
 	public boolean authorise(final Request<InvestmentRoundApplication> request) {
 		assert request != null;
-		return true;
+		int idInvestmentRound = request.getModel().getInteger("id");
+		InvestmentRoundApplication appl = this.repository.findOneById(idInvestmentRound);
+		int entrepreneurId = request.getPrincipal().getActiveRoleId();
+		boolean res = appl.getInvestor().getId() == entrepreneurId;
+		return res;
 	}
 
 	@Override

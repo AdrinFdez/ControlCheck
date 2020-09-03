@@ -63,8 +63,11 @@ public class InvestmentRoundApplication extends DomainEntity {
 	//CONTROL CHECK
 
 	@URL
+	@Column(length = 2048)
+	@Length(max = 2048)
 	private String				link;
 
+	@Length(max = 255)
 	private String				pass;
 
 	private Boolean				checked;

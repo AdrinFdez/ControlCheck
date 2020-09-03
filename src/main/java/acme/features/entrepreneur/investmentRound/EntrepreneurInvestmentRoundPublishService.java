@@ -77,9 +77,10 @@ public class EntrepreneurInvestmentRoundPublishService implements AbstractUpdate
 			Double i = total.getAmount() + activity.getBudget().getAmount();
 			total.setAmount(i);
 		}
-		boolean totalActivityMoney = moneyInvestment.getAmount().equals(total.getAmount());
-		errors.state(request, totalActivityMoney, "money", "entrepreneur.investmentRound.error.total");
-
+		if (!errors.hasErrors("money")) {
+			boolean totalActivityMoney = moneyInvestment.getAmount().equals(total.getAmount());
+			errors.state(request, totalActivityMoney, "money", "entrepreneur.investmentRound.error.total");
+		}
 	}
 
 	@Override

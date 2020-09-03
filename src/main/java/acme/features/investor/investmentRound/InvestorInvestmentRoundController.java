@@ -23,7 +23,7 @@ public class InvestorInvestmentRoundController extends AbstractController<Invest
 	private InvestorInvestmentRoundListService		listService;
 
 	@Autowired
-	private InvestorInvestmentRoundnShowService		showService;
+	private InvestorInvestmentRoundShowService		showService;
 
 	@Autowired
 	private InvestorInvestmentRoundListMineService	listMineService;

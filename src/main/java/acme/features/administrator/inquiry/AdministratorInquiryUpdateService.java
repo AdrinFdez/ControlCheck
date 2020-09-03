@@ -59,14 +59,14 @@ public class AdministratorInquiryUpdateService implements AbstractUpdateService<
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		if (!errors.hasErrors("moneyMin")) {
+		if (!errors.hasErrors("moneyMin") && entity.getMoneyMin() != null) {
 			Boolean isEur = entity.getMoneyMin().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, isEur, "moneyMin", "administrator.inquiry.error.wrong-currency", entity.getMoneyMin());
 
 			Boolean moreThanMin = entity.getMoneyMax().getAmount() > entity.getMoneyMin().getAmount();
 			errors.state(request, moreThanMin, "moneyMin", "administrator.inquiry.error.money-min-max");
 		}
-		if (!errors.hasErrors("moneyMax")) {
+		if (!errors.hasErrors("moneyMax") && entity.getMoneyMax() != null) {
 			Boolean isEur = entity.getMoneyMax().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, isEur, "moneyMax", "administrator.inquiry.error.wrong-currency", entity.getMoneyMax());
 

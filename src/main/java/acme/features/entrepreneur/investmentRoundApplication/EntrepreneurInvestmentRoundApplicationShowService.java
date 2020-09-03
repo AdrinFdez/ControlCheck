@@ -20,7 +20,11 @@ public class EntrepreneurInvestmentRoundApplicationShowService implements Abstra
 	@Override
 	public boolean authorise(final Request<InvestmentRoundApplication> request) {
 		assert request != null;
-		return true;
+		int idInvestmentRoundApplication = request.getModel().getInteger("id");
+		InvestmentRoundApplication j = this.repository.findOneById(idInvestmentRoundApplication);
+		int entrepreneurId = request.getPrincipal().getActiveRoleId();
+		boolean res = j.getInvestmentRound().getEntrepreneur().getId() == entrepreneurId;
+		return res;
 	}
 
 	@Override

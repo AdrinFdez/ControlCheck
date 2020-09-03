@@ -82,6 +82,10 @@
 
 	<acme:form-submit code="entrepreneur.investmentRound.form.button.delete" 
 	action="/entrepreneur/investment-round/delete"
+	test="${command == 'update'}"/>
+	
+	<acme:form-submit code="entrepreneur.investmentRound.form.button.delete" 
+	action="/entrepreneur/investment-round/delete"
 	test="${command == 'delete'}"/>
 
 	<acme:form-submit code="entrepreneur.investmentRound.form.button.delete" 
@@ -92,6 +96,10 @@
 	action="/entrepreneur/investment-round/delete"
 	test="${command == 'publish'}"/>
 
+	<acme:form-submit code="entrepreneur.investmentRound.form.button.publish" 
+	action="/entrepreneur/investment-round/publish"
+	test="${command == 'update'  && status == 'draft'}"/>
+	
 	<acme:form-submit code="entrepreneur.investmentRound.form.button.publish" 
 	action="/entrepreneur/investment-round/publish"
 	test="${command == 'publish'  && status == 'draft'}"/>

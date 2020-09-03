@@ -58,7 +58,7 @@ public class InvestorInvestmentRoundApplicationUpdateService implements Abstract
 		assert entity != null;
 		assert errors != null;
 
-		if (!errors.hasErrors("money")) {
+		if (!errors.hasErrors("money") && entity.getOffer() != null) {
 			boolean moneyCurrencyMax = entity.getOffer().getCurrency().matches("EUR|€|EUROS|Euros|euros|eur");
 			errors.state(request, moneyCurrencyMax, "offer", "investor.investmentRoundApplication.error.moneyCurrency");
 			boolean noNegSalary = entity.getOffer().getAmount() <= 0.0;

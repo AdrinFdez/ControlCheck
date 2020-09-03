@@ -1477,6 +1477,14 @@
 		<property name = "workProgramme" ref = "workProgramme12"/>
 	</bean>
 	
+	<bean id = "activity13" class = "acme.entities.investmentRounds.Activity">
+		<property name = "title" value = "activity 1 Control Check"/>
+		<property name = "startDate" value = "2018/05/24 00:00"/>
+		<property name = "endDate" value = "2022/05/24 00:00"/>
+		<property name = "budget" value = "5000.0 euros"/>
+		<property name = "workProgramme" ref = "workProgramme13"/>
+	</bean>
+	
 	
 	
 	<!-- Work Programme -->
@@ -1528,6 +1536,14 @@
 
 	<bean id = "workProgramme12" class = "acme.entities.investmentRounds.WorkProgramme">
 		<property name = "investmentRound" ref = "InvestmentRound12"/>
+	</bean>
+	
+	<bean id = "workProgramme13" class = "acme.entities.investmentRounds.WorkProgramme">
+		<property name = "investmentRound" ref = "InvestmentRound13"/>
+	</bean>
+	
+	<bean id = "workProgramme14" class = "acme.entities.investmentRounds.WorkProgramme">
+		<property name = "investmentRound" ref = "InvestmentRound14"/>
 	</bean>
 	
 	<!-- INVESTMENT ROUNDS -->
@@ -1677,7 +1693,34 @@
 		<property name = "status" value = "published"/>
 		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
 	</bean>
-
+	
+	<!-- CONTROL CHECK  -->
+	
+	<bean id = "InvestmentRound13" class = "acme.entities.investmentRounds.InvestmentRound">
+		<property name = "ticker" value = "SEC-15-777999"/>
+		<property name = "creationMoment" value = "2015/12/31 10:00"/>
+		<property name = "kind" value = "SEED"/>
+		<property name = "title" value = "InvestmentRound Control Check 1"/>
+		<property name = "description" value = "InvestmentRound Control Check 1"/>
+		<property name = "money" value = "5000.0 euros"/>
+		<property name = "link" value = "http://www.InvestmentRound13.com"/>
+		<property name = "status" value = "published"/>
+		<property name = "text" value = "Charizard"/>
+		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
+	</bean>
+	
+	<bean id = "InvestmentRound14" class = "acme.entities.investmentRounds.InvestmentRound">
+		<property name = "ticker" value = "SEC-15-888999"/>
+		<property name = "creationMoment" value = "2015/12/31 10:00"/>
+		<property name = "kind" value = "SEED"/>
+		<property name = "title" value = "InvestmentRound Control Check 2"/>
+		<property name = "description" value = "InvestmentRound Control Check 2"/>
+		<property name = "money" value = "5000.0 euros"/>
+		<property name = "link" value = "http://www.InvestmentRound14.com"/>
+		<property name = "status" value = "draft"/>
+		<property name = "text" value = "Blastoise"/>
+		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
+	</bean>
 	
 	<!-- Investment Round Applications -->
 	
@@ -1838,6 +1881,72 @@
 		<property name = "investor" ref = "investor2"/>
    </bean>
    
+   <!-- CONTROL CHECK  -->
+   
+   <bean id = "InvestmentRoundApplication19" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-202020"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound13"/>
+		<property name = "investor" ref = "investor1"/>
+   </bean>
+   
+   <bean id = "InvestmentRoundApplication20" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-303030"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound13"/>
+		<property name = "investor" ref = "investor1"/>
+   </bean>
+   
+   <bean id = "InvestmentRoundApplication21" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-313131"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound13"/>
+		<property name = "investor" ref = "investor1"/>
+		<property name = "link" value ="https://www.dp.net"/>
+		<property name = "checked" value="true"/>
+   </bean>
+   
+   <bean id = "InvestmentRoundApplication22" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-323232"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound14"/>
+		<property name = "investor" ref = "investor1"/>
+		<property name = "link" value ="https://www.dp.net"/>
+		<property name = "checked" value="true"/>
+   </bean>
+   
+   <bean id = "InvestmentRoundApplication23" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-333333"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound14"/>
+		<property name = "investor" ref = "investor1"/>
+		<property name = "link" value ="https://www.dp.net"/>
+		<property name = "pass" value="holahola1+"/>
+		<property name = "checked" value="false"/>
+		
+   </bean>
+   
+   <bean id = "InvestmentRoundApplication24" class = "acme.entities.investmentRoundApplications.InvestmentRoundApplication">
+		<property name = "ticker" value = "SEC-20-343343"/>
+		<property name = "creationMoment" value = "2020/05/31 10:00"/>
+		<property name = "statement" value = "pending"/>
+		<property name = "offer" value = "3000.0 euros"/>
+		<property name = "investmentRound" ref = "InvestmentRound14"/>
+		<property name = "investor" ref = "investor1"/>
+		<property name = "link" value ="https://www.dp.net"/>
+		<property name = "pass" value="holahola1+"/>
+		<property name = "checked" value="false"/>
+   </bean>
    
    <!-- Accounting Record -->
 		
@@ -2880,5 +2989,7 @@
 		<property name="user" ref="Entrepreneur2Authenticated"/>
 		<property name="forum" ref="discussionForum24"/>
 	</bean>
+	
+	<!-- CONTROL CHECK  -->
 	
 </beans>

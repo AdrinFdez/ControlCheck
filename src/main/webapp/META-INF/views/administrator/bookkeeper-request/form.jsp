@@ -4,9 +4,9 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.bookkeeper-request.form.label.firm" path="firm"/>
+	<acme:form-textbox code="administrator.bookkeeper-request.form.label.firm" readonly="true" path="firm"/>
 
-	<acme:form-textarea code="administrator.bookkeeper-request.form.label.responsibilityStatement" path="responsibilityStatement"/>
+	<acme:form-textarea code="administrator.bookkeeper-request.form.label.responsibilityStatement" readonly="true" path="responsibilityStatement"/>
 
 
 	<acme:form-submit code="administrator.bookkeeper-request.form.button.accept" 

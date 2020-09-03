@@ -11,7 +11,7 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class InvestorInvestmentRoundnShowService implements AbstractShowService<Investor, InvestmentRound> {
+public class InvestorInvestmentRoundShowService implements AbstractShowService<Investor, InvestmentRound> {
 
 	@Autowired
 	InvestorInvestmentRoundRepository repository;
@@ -20,7 +20,10 @@ public class InvestorInvestmentRoundnShowService implements AbstractShowService<
 	@Override
 	public boolean authorise(final Request<InvestmentRound> request) {
 		assert request != null;
-		return true;
+		int idInvestmentRound = request.getModel().getInteger("id");
+		InvestmentRound j = this.repository.findOneById(idInvestmentRound);
+		boolean res = request.getPrincipal().isAuthenticated();
+		return res;
 	}
 
 	@Override

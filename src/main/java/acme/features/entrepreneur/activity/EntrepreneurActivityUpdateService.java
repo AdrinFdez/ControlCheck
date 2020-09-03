@@ -75,25 +75,29 @@ public class EntrepreneurActivityUpdateService implements AbstractUpdateService<
 			errors.state(request, !noNegSalary, "budget", "entrepreneur.activity.error.noNegMoney");
 		}
 
-		int id = request.getModel().getInteger("id");
-		InvestmentRound j = this.repository.getInvestmentRounByIdActivity(id);
-		List<Activity> activities = this.repository.findActivitiesOfTheInvestmentRound(j.getId());
-		for (Activity activity : activities) {
-			if (activity.getId() == id) {
-				activity.getBudget().setAmount(entity.getBudget().getAmount());
-			}
-		}
-		Money moneyInvestment = j.getMoney();
-		Money total = new Money();
-		total.setAmount(0.0);
-		total.setCurrency("euros");
-		for (Activity activity : activities) {
-			Double i = total.getAmount() + activity.getBudget().getAmount();
-			total.setAmount(i);
-		}
-		boolean totalActivityMoney = total.getAmount().compareTo(moneyInvestment.getAmount()) <= 0;
-		errors.state(request, totalActivityMoney, "budget", "entrepreneur.activity.error.total");
+		if (!errors.hasErrors("budget")) {
+			int id = request.getModel().getInteger("id");
+			InvestmentRound j = this.repository.getInvestmentRounByIdActivity(id);
+			List<Activity> activities = this.repository.findActivitiesOfTheInvestmentRound(j.getId());
+			for (Activity activity : activities) {
+				if (activity.getId() == id) {
 
+					activity.getBudget().setAmount(entity.getBudget().getAmount());
+
+				}
+			}
+			Money moneyInvestment = j.getMoney();
+			Money total = new Money();
+			total.setAmount(0.0);
+			total.setCurrency("euros");
+			for (Activity activity : activities) {
+				Double i = total.getAmount() + activity.getBudget().getAmount();
+				total.setAmount(i);
+			}
+			boolean totalActivityMoney = total.getAmount().compareTo(moneyInvestment.getAmount()) <= 0;
+			errors.state(request, totalActivityMoney, "budget", "entrepreneur.activity.error.total");
+
+		}
 		if (!errors.hasErrors("title")) {
 			boolean titleSpam = SpamCheck.checkSpam(entity.getTitle(), c);
 			errors.state(request, !titleSpam, "title", "entrepreneur.activity.error.title.spam");
