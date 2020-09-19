@@ -70,8 +70,8 @@ public class InvestmentRound extends DomainEntity {
 
 	//CONTROL CHECK
 
-	@Length(max = 2048)
-	@Column(length = 2048)
-	private String				text;
+	@Length(max = 1024)
+	@Column(length = 1024)
+	private String				yomp;
 
 }

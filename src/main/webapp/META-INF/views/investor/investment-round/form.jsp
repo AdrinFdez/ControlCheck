@@ -11,7 +11,7 @@
 	<acme:form-textarea code="investor.investmentRound.form.label.description" path="description"/>
 	<acme:form-double code="investor.investmentRound.form.label.money" path="money"/>
 	<acme:form-url code="investor.investmentRound.form.label.link" path="link"/>
-	<acme:form-textbox code="investor.investmentRound.form.label.text" path="text"/>
+	<acme:form-textarea code="investor.investmentRound.form.label.yomp" path="yomp"/>
 	
 	<acme:form-submit test="${command == 'show' }"
 		method = "get"

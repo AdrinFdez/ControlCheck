@@ -41,7 +41,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 			"avgMoneyInquires2", "stdMoneyInquires2", "minMoneyOvertures1", "maxMoneyOvertures1", "avgMoneyOvertures1", "stdMoneyOvertures1", "minMoneyOvertures2", "maxMoneyOvertures2", "avgMoneyOvertures2", "stdMoneyOvertures2",
 			"ratioOfTechnologiesPerSource", "numberOfTechnologiesGroupedBySector", "ratioOfToolsPerSource", "numberOfToolsGroupedBySector", "avgInvestmentRoundPerEntrepreneur", "avgInvestmentRoundApplicationPerEntrepreneur",
 			"avgInvestmentRoundApplicationPerInvestor", "ratioOfInvestmentRoundByKind", "ratioOfInvestmentRoundApplicationByStatus", "numberOfApplicationsPendingPerDayFromLast15Days", "numberOfApplicationsAcceptedPerDayFromLast15Days",
-			"numberOfApplicationsRejectedPerDayFromLast15Days", "ratioOfInvestmentRoundByRequest", "ratioOfInvestmentRoundApplicationByLink", "ratioOfInvestmentRoundApplicationByPassword");
+			"numberOfApplicationsRejectedPerDayFromLast15Days", "ratioOfInvestmentRoundByYomp", "ratioOfInvestmentRoundApplicationByLink", "ratioOfInvestmentRoundApplicationByPassword");
 
 	}
 
@@ -198,15 +198,15 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 
 		// Control Check
 
-		List<List<String>> ratioOfInvestmentRoundByRequest = new ArrayList<List<String>>();
-		List<String> list0Request = new ArrayList<String>();
-		list0Request.add("Yes");
-		list0Request.add(String.valueOf(this.repository.getRatioOfInvestmentRoundByRequest()));
-		ratioOfInvestmentRoundByRequest.add(list0Request);
-		List<String> list1Request = new ArrayList<String>();
-		list1Request.add("No");
-		list1Request.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundByRequest()));
-		ratioOfInvestmentRoundByRequest.add(list1Request);
+		List<List<String>> ratioOfInvestmentRoundByYomp = new ArrayList<List<String>>();
+		List<String> list0Yomp = new ArrayList<String>();
+		list0Yomp.add("Yes");
+		list0Yomp.add(String.valueOf(this.repository.getRatioOfInvestmentRoundByYomp()));
+		ratioOfInvestmentRoundByYomp.add(list0Yomp);
+		List<String> list1Yomp = new ArrayList<String>();
+		list1Yomp.add("No");
+		list1Yomp.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundByYomp()));
+		ratioOfInvestmentRoundByYomp.add(list1Yomp);
 
 		List<List<String>> ratioOfInvestmentRoundApplicationByLink = new ArrayList<List<String>>();
 		List<String> list0Link = new ArrayList<String>();
@@ -228,7 +228,7 @@ public class AdministratorDashboardListService implements AbstractListService<Ad
 		list1Pass.add(String.valueOf(100.0 - this.repository.getRatioOfInvestmentRoundApplicationByPassword()));
 		ratioOfInvestmentRoundApplicationByPassword.add(list1Pass);
 
-		d.setRatioOfInvestmentRoundByRequest(ratioOfInvestmentRoundByRequest);
+		d.setRatioOfInvestmentRoundByYomp(ratioOfInvestmentRoundByYomp);
 		d.setRatioOfInvestmentRoundApplicationByLink(ratioOfInvestmentRoundApplicationByLink);
 		d.setRatioOfInvestmentRoundApplicationByPassword(ratioOfInvestmentRoundApplicationByPassword);
 

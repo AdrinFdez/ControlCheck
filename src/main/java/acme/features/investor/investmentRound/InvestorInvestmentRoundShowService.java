@@ -32,7 +32,7 @@ public class InvestorInvestmentRoundShowService implements AbstractShowService<I
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "creationMoment", "kind", "title", "description", "money", "link", "status", "text");
+		request.unbind(entity, model, "ticker", "creationMoment", "kind", "title", "description", "money", "link", "status", "yomp");
 	}
 
 	@Override

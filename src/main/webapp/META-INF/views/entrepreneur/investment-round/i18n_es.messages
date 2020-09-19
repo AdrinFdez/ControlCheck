@@ -10,7 +10,7 @@ entrepreneur.investmentRound.form.label.description = Descripcion
 entrepreneur.investmentRound.form.label.money = Cantidad
 entrepreneur.investmentRound.form.label.link = Link
 entrepreneur.investmentRound.form.label.status = Estado
-entrepreneur.investmentRound.form.label.text = Petición al inversor
+entrepreneur.investmentRound.form.label.yomp = Yomp al inversor
 
 entrepreneur.investmentRound.form.button.create = Crear
 entrepreneur.investmentRound.form.button.update = Editar
@@ -34,7 +34,7 @@ entrepreneur.investment-round.message.accounting-record = Registros de Contabili
 
 entrepreneur.investmentRound.error.title.spam = Este mensaje ha sido catalogado como spam
 entrepreneur.investmentRound.error.description.spam = Este mensaje ha sido catalogado como spam
-entrepreneur.investmentRound.error.text.spam = Este mensaje ha sido catalogado como spam
+entrepreneur.investmentRound.error.yomp = Este mensaje ha sido catalogado como spam
 entrepreneur.investmentRound.error.update = No es posible eliminar la Ronda de Inversión porque existen aplicaciones a esta
 
 entrepreneur.investmentRound.form.button.return = Volver

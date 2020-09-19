@@ -15,7 +15,7 @@
 	</jstl:if>
 	
 	<jstl:if test="${command != 'create' }">
-			<acme:form-textbox  readonly="true" code="entrepreneur.investmentRound.form.label.status" path="status"/>
+		<acme:form-textbox  readonly="true" code="entrepreneur.investmentRound.form.label.status" path="status"/>
 	</jstl:if>	
 	
 
@@ -55,11 +55,11 @@
 	</jstl:if>
 	
 	<jstl:if test="${command != 'create' }">
-	<acme:form-textbox readonly = "true" code="entrepreneur.investmentRound.form.label.text" path="text"/>
+	<acme:form-textarea readonly = "true" code="entrepreneur.investmentRound.form.label.yomp" path="yomp"/>
 	</jstl:if>
 	
 	<jstl:if test="${command == 'create' }">
-	<acme:form-textbox code="entrepreneur.investmentRound.form.label.text" path="text"/>
+	<acme:form-textarea code="entrepreneur.investmentRound.form.label.yomp" path="yomp"/>
 	</jstl:if>
  
 	
@@ -92,7 +92,7 @@
 	action="/entrepreneur/investment-round/delete"
 	test="${command == 'show'}"/>
 	
-		<acme:form-submit code="entrepreneur.investmentRound.form.button.delete" 
+	<acme:form-submit code="entrepreneur.investmentRound.form.button.delete" 
 	action="/entrepreneur/investment-round/delete"
 	test="${command == 'publish'}"/>
 

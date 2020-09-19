@@ -63,6 +63,6 @@ administrator.dashboard.chart.ratioOfInvestmentRoundByKind = Investment Round gr
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByStatus = Application Round grouped by Status
 
 ####################### Control Check ##############################
-administrator.dashboard.chart.ratioOfInvestmentRoundByRequest = Ratio of Investment Rounds that have Request
+administrator.dashboard.chart.ratioOfInvestmentRoundByYomp = Ratio of Investment Rounds that have Yomp
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByLink = Ratio of Investment Round Applications that have Link
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByPassword = Ratio of Investment Round Applications that have Password

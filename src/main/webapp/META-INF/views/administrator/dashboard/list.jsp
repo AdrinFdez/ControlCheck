@@ -122,8 +122,8 @@
 		<!-- Control Check -->
 		
 <div style="height:30%; width:30%;display:inline-block">
-<acme:message code="administrator.dashboard.chart.ratioOfInvestmentRoundByRequest"/> 
-<canvas id = "investmentRoundByRequest" > </canvas>
+<acme:message code="administrator.dashboard.chart.ratioOfInvestmentRoundByYomp"/> 
+<canvas id = "investmentRoundByYomp" > </canvas>
 </div>
 
 <div style="height:30%; width:30%;display:inline-block">
@@ -405,28 +405,28 @@ $(document).ready(function(){
 		
 <script type = "text/javascript">
 $(document).ready(function(){
-var CanvasIRByRequest = document.getElementById("investmentRoundByRequest");
+var CanvasIRByYomp = document.getElementById("investmentRoundByYomp");
 Chart.defaults.global.defaultFontFamily = "Lato";
 Chart.defaults.global.defaultFontSize = 18;
-var DataIRByRequest = {
+var DataIRByYomp = {
 	    labels: [
-				<jstl:forEach items = "${ratioOfInvestmentRoundByRequest}" var = "item">
+				<jstl:forEach items = "${ratioOfInvestmentRoundByYomp}" var = "item">
 				"<jstl:out value = "${item[0]}" />" ,
 				</jstl:forEach>
 	    ],
 	    datasets: [
 	        {
 	            data: [
-	            	<jstl:forEach items = "${ratioOfInvestmentRoundByRequest}" var = "item">
+	            	<jstl:forEach items = "${ratioOfInvestmentRoundByYomp}" var = "item">
 					"<jstl:out value = "${item[1]}" />" ,
 					</jstl:forEach>
 	            ],
 	            backgroundColor :["red", "green", "blue", "purple", "magenta"]
 	        }]
 	};
-var pieChartIRByRequest = new Chart(CanvasIRByRequest, {
+var pieChartIRByYomp = new Chart(CanvasIRByYomp, {
 	  type: 'pie',
-	  data: DataIRByRequest
+	  data: DataIRByYomp
 	});
 });
 

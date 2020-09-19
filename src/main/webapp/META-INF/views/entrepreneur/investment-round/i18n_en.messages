@@ -10,7 +10,7 @@ entrepreneur.investmentRound.form.label.description = Description
 entrepreneur.investmentRound.form.label.money = Money
 entrepreneur.investmentRound.form.label.link = Link
 entrepreneur.investmentRound.form.label.status = Status
-entrepreneur.investmentRound.form.label.text = Request to the investors
+entrepreneur.investmentRound.form.label.yomp = Yomp to the investors
 
 entrepreneur.investmentRound.form.button.create = Create
 entrepreneur.investmentRound.form.button.update = Update
@@ -34,7 +34,7 @@ entrepreneur.investment-round.message.accounting-record = Accounting Records
 
 entrepreneur.investmentRound.error.title.spam = This message has been classified as spam
 entrepreneur.investmentRound.error.description.spam = This message has been classified as spam
-entrepreneur.investmentRound.error.text.spam = This message has been classified as spam
+entrepreneur.investmentRound.error.yomp.spam = This message has been classified as spam
 entrepreneur.investmentRound.error.update = It is not possible to delete the Investment Round because applications exists on this one
 
 entrepreneur.investmentRound.form.button.return = Return

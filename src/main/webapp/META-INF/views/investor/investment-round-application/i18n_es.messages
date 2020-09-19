@@ -11,7 +11,7 @@ investor.investmentRoundApplication.form.label.link= Enlace
 investor.investmentRoundApplication.form.label.pass = Constraseña
 
 investor.investmentRoundApplication.message.investmentRound = Ronda de Inversión
-
+authenticated.investmentRound.list.message.discussionforum = Lista de Foros de Discusión
 investor.investmentRoundApplication.error.moneyCurrency = La moneda debe  ser EUROS (€)
 investor.investmentRoundApplication.error.noNegOffer = La cantidad debe ser positiva
 investor.investmentRoundApplication.error.noMayorOffer = La cantidad no debe ser mayor que el dinero de la ronda de inversión 

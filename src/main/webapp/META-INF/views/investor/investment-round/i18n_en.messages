@@ -9,7 +9,7 @@ investor.investmentRound.form.label.description = Description
 investor.investmentRound.form.label.money = Money
 investor.investmentRound.form.label.link = Link
 investor.investmentRound.form.label.status = Status
-investor.investmentRound.form.label.text = Request to the investors
+investor.investmentRound.form.label.yomp = Yomp to the investors
 
 investor.investmentRound.message.activity = See the Work Programme for this Investment Round
 

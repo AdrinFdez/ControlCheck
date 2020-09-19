@@ -1557,7 +1557,7 @@
 		<property name = "money" value = "7000.0 euros"/>
 		<property name = "link" value = "http://www.InvestmentRound01.com"/>
 		<property name = "status" value = "draft"/>
-		<property name = "text" value= "Esto es una request para el investor"/>
+		<property name = "yomp" value= "Esto es una request para el investor"/>
 		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
 	</bean>
 
@@ -1705,7 +1705,7 @@
 		<property name = "money" value = "5000.0 euros"/>
 		<property name = "link" value = "http://www.InvestmentRound13.com"/>
 		<property name = "status" value = "published"/>
-		<property name = "text" value = "Charizard"/>
+		<property name = "yomp" value = "Charizard"/>
 		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
 	</bean>
 	
@@ -1718,7 +1718,7 @@
 		<property name = "money" value = "5000.0 euros"/>
 		<property name = "link" value = "http://www.InvestmentRound14.com"/>
 		<property name = "status" value = "draft"/>
-		<property name = "text" value = "Blastoise"/>
+		<property name = "yomp" value = "Blastoise"/>
 		<property name = "Entrepreneur" ref = "Entrepreneur1"/>
 	</bean>
 	

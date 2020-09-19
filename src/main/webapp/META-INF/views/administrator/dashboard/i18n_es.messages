@@ -63,6 +63,6 @@ administrator.dashboard.chart.ratioOfInvestmentRoundByKind = Ratio de ronda de i
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByStatus = Aplicación a ronda de inversión por estado
 
 ####################### Control Check ##############################
-administrator.dashboard.chart.ratioOfInvestmentRoundByRequest = Ratio de Rondas de Inversión que tienen peticion
+administrator.dashboard.chart.ratioOfInvestmentRoundByYomp = Ratio de Rondas de Inversión que tienen Yomp
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByLink = Ratio de Aplicaciones a Rondas de Inversión que tienen Enlace
 administrator.dashboard.chart.ratioOfInvestmentRoundApplicationByPassword = Ratio de Aplicaciones a Rondas de Inversión que tienen Contraseña

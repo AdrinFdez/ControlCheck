@@ -49,7 +49,7 @@ public class EntrepreneurInvestmentRoundApplicationAcceptService implements Abst
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		request.bind(entity, errors, "ticker", "creationMoment", "statement", "offer", "investmentRound");
+		request.bind(entity, errors, "ticker", "creationMoment", "statement", "offer", "investmentRound", "link");
 
 	}
 

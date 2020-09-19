@@ -44,7 +44,7 @@ public class EntrepreneurInvestmentRoundCreateService implements AbstractCreateS
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "ticker", "kind", "title", "description", "money", "link", "status", "text");
+		request.unbind(entity, model, "ticker", "kind", "title", "description", "money", "link", "status", "yomp");
 
 	}
 
@@ -122,9 +122,9 @@ public class EntrepreneurInvestmentRoundCreateService implements AbstractCreateS
 			errors.state(request, !descriptionSpam, "description", "entrepreneur.investmentRound.error.description.spam");
 		}
 
-		if (!errors.hasErrors("text")) {
-			boolean textSpam = SpamCheck.checkSpam(entity.getText(), c);
-			errors.state(request, !textSpam, "text", "entrepreneur.investmentRound.error.text.spam");
+		if (!errors.hasErrors("yomp")) {
+			boolean yompSpam = SpamCheck.checkSpam(entity.getYomp(), c);
+			errors.state(request, !yompSpam, "yomp", "entrepreneur.investmentRound.error.yomp.spam");
 		}
 
 	}

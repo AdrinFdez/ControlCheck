@@ -203,9 +203,9 @@
         `money_amount` double precision,
         `money_currency` varchar(255),
         `status` varchar(255),
-        `text` varchar(2048),
         `ticker` varchar(255),
         `title` varchar(255),
+        `yomp` varchar(1024),
         `entrepreneur_id` integer not null,
         primary key (`id`)
     ) engine=InnoDB;
@@ -216,7 +216,7 @@
         `checked` bit,
         `creation_moment` datetime(6),
         `justification` varchar(1024),
-        `link` varchar(255),
+        `link` varchar(2048),
         `offer_amount` double precision,
         `offer_currency` varchar(255),
         `pass` varchar(255),
